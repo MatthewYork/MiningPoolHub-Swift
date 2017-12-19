@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MiningPoolHub-Swift"
-  s.version      = "4.0.2"
+  s.version      = "4.0.3"
   s.summary      = "MiningPoolHub API Wrapper in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -132,6 +132,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  # s.dependency 'ObjectMapper'
+   s.dependency 'ObjectMapper'
 
 end

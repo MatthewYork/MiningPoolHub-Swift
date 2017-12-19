@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B79B147349A9787A73B9405 /* Pods_MiningPoolHubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD589A5DE2B1704F907E37F /* Pods_MiningPoolHubDemo.framework */; };
+		385A698AB188FF3680645C5D /* Pods_MiningPoolHubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC2EBE8601EE0D572084325 /* Pods_MiningPoolHubDemoUITests.framework */; };
+		EE6322EE03639A0AC7A9DF5E /* Pods_MiningPoolHubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E712152C2F48875C4B38EB8C /* Pods_MiningPoolHubDemoTests.framework */; };
+		F00D67CD1FE8B4B7003C80C2 /* MphProviderOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67C51FE8B4B6003C80C2 /* MphProviderOperationProtocol.swift */; };
+		F00D67CE1FE8B4B7003C80C2 /* MphCoinProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */; };
+		F00D67CF1FE8B4B7003C80C2 /* MphListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */; };
+		F00D67D01FE8B4B7003C80C2 /* MphWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67CA1FE8B4B6003C80C2 /* MphWebProvider.swift */; };
+		F00D67D11FE8B4B7003C80C2 /* MphProviderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67CC1FE8B4B6003C80C2 /* MphProviderExtensions.swift */; };
+		F00D67D31FE8B595003C80C2 /* MphConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D21FE8B595003C80C2 /* MphConfiguration.swift */; };
+		F00D67D71FE8B5CB003C80C2 /* MphDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */; };
+		F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */; };
+		F00D67DB1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */; };
+		F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */; };
+		F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66D1FE8B12000C346B4 /* ViewController.swift */; };
+		F0D1F6711FE8B12000C346B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1F66F1FE8B12000C346B4 /* Main.storyboard */; };
+		F0D1F6731FE8B12000C346B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D1F6721FE8B12000C346B4 /* Assets.xcassets */; };
+		F0D1F6761FE8B12000C346B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1F6741FE8B12000C346B4 /* LaunchScreen.storyboard */; };
+		F0D1F6811FE8B12000C346B4 /* MiningPoolHubDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F6801FE8B12000C346B4 /* MiningPoolHubDemoTests.swift */; };
+		F0D1F68C1FE8B12000C346B4 /* MiningPoolHubDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F68B1FE8B12000C346B4 /* MiningPoolHubDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0D1F67D1FE8B12000C346B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0D1F6601FE8B12000C346B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D1F6671FE8B12000C346B4;
+			remoteInfo = MiningPoolHubDemo;
+		};
+		F0D1F6881FE8B12000C346B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0D1F6601FE8B12000C346B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D1F6671FE8B12000C346B4;
+			remoteInfo = MiningPoolHubDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C3A8342912E81461928B899 /* Pods-MiningPoolHubDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemo/Pods-MiningPoolHubDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0CD589A5DE2B1704F907E37F /* Pods_MiningPoolHubDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiningPoolHubDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFC61425D43FEFFAC2DC6F4 /* Pods-MiningPoolHubDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemo/Pods-MiningPoolHubDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2339EF09DED9BC9FB04D566C /* Pods-MiningPoolHubDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemoTests/Pods-MiningPoolHubDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5612B7B1FFC3A82D2A301195 /* Pods-MiningPoolHubDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemoUITests/Pods-MiningPoolHubDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDFBCBB6EC14A20A5C99F878 /* Pods-MiningPoolHubDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemoUITests/Pods-MiningPoolHubDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E712152C2F48875C4B38EB8C /* Pods_MiningPoolHubDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiningPoolHubDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00D67C51FE8B4B6003C80C2 /* MphProviderOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProviderOperationProtocol.swift; sourceTree = "<group>"; };
+		F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphCoinProfitStatistics.swift; sourceTree = "<group>"; };
+		F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphListResponse.swift; sourceTree = "<group>"; };
+		F00D67CA1FE8B4B6003C80C2 /* MphWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphWebProvider.swift; sourceTree = "<group>"; };
+		F00D67CC1FE8B4B6003C80C2 /* MphProviderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProviderExtensions.swift; sourceTree = "<group>"; };
+		F00D67D21FE8B595003C80C2 /* MphConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphConfiguration.swift; sourceTree = "<group>"; };
+		F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphDefaultConfiguration.swift; sourceTree = "<group>"; };
+		F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphProvider.swift; sourceTree = "<group>"; };
+		F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphAutoSwitchingProfitStatistics.swift; sourceTree = "<group>"; };
+		F0D1F6681FE8B12000C346B4 /* MiningPoolHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiningPoolHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0D1F66D1FE8B12000C346B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0D1F6701FE8B12000C346B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0D1F6721FE8B12000C346B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0D1F6751FE8B12000C346B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0D1F6771FE8B12000C346B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D1F67C1FE8B12000C346B4 /* MiningPoolHubDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiningPoolHubDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D1F6801FE8B12000C346B4 /* MiningPoolHubDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiningPoolHubDemoTests.swift; sourceTree = "<group>"; };
+		F0D1F6821FE8B12000C346B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D1F6871FE8B12000C346B4 /* MiningPoolHubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiningPoolHubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D1F68B1FE8B12000C346B4 /* MiningPoolHubDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiningPoolHubDemoUITests.swift; sourceTree = "<group>"; };
+		F0D1F68D1FE8B12000C346B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC2EBE8601EE0D572084325 /* Pods_MiningPoolHubDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiningPoolHubDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEF6A2FE6C6E7FFCDB1A1ED /* Pods-MiningPoolHubDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemoTests/Pods-MiningPoolHubDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0D1F6651FE8B12000C346B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B79B147349A9787A73B9405 /* Pods_MiningPoolHubDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1F6791FE8B12000C346B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6322EE03639A0AC7A9DF5E /* Pods_MiningPoolHubDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1F6841FE8B12000C346B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385A698AB188FF3680645C5D /* Pods_MiningPoolHubDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500FAF10E2449823A4C08AF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CD589A5DE2B1704F907E37F /* Pods_MiningPoolHubDemo.framework */,
+				E712152C2F48875C4B38EB8C /* Pods_MiningPoolHubDemoTests.framework */,
+				FBC2EBE8601EE0D572084325 /* Pods_MiningPoolHubDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A268F3C9BEFD9C9E157B1FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CFC61425D43FEFFAC2DC6F4 /* Pods-MiningPoolHubDemo.debug.xcconfig */,
+				0C3A8342912E81461928B899 /* Pods-MiningPoolHubDemo.release.xcconfig */,
+				FBEF6A2FE6C6E7FFCDB1A1ED /* Pods-MiningPoolHubDemoTests.debug.xcconfig */,
+				2339EF09DED9BC9FB04D566C /* Pods-MiningPoolHubDemoTests.release.xcconfig */,
+				5612B7B1FFC3A82D2A301195 /* Pods-MiningPoolHubDemoUITests.debug.xcconfig */,
+				BDFBCBB6EC14A20A5C99F878 /* Pods-MiningPoolHubDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F00D67C31FE8B4A6003C80C2 /* MiningPoolHub */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67CB1FE8B4B6003C80C2 /* Extensions */,
+				F00D67C61FE8B4B6003C80C2 /* Models */,
+				F00D67C41FE8B4B6003C80C2 /* Protocols */,
+				F00D67C91FE8B4B6003C80C2 /* Providers */,
+			);
+			path = MiningPoolHub;
+			sourceTree = "<group>";
+		};
+		F00D67C41FE8B4B6003C80C2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67D21FE8B595003C80C2 /* MphConfiguration.swift */,
+				F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */,
+				F00D67C51FE8B4B6003C80C2 /* MphProviderOperationProtocol.swift */,
+			);
+			name = Protocols;
+			path = ../../../MiningPoolHub/Sources/Protocols;
+			sourceTree = "<group>";
+		};
+		F00D67C61FE8B4B6003C80C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67D51FE8B5AB003C80C2 /* Dtos */,
+				F00D67D41FE8B5A5003C80C2 /* App */,
+			);
+			name = Models;
+			path = ../../../MiningPoolHub/Sources/Models;
+			sourceTree = "<group>";
+		};
+		F00D67C91FE8B4B6003C80C2 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67CA1FE8B4B6003C80C2 /* MphWebProvider.swift */,
+			);
+			name = Providers;
+			path = ../../../MiningPoolHub/Sources/Providers;
+			sourceTree = "<group>";
+		};
+		F00D67CB1FE8B4B6003C80C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67CC1FE8B4B6003C80C2 /* MphProviderExtensions.swift */,
+			);
+			name = Extensions;
+			path = ../../../MiningPoolHub/Sources/Extensions;
+			sourceTree = "<group>";
+		};
+		F00D67D41FE8B5A5003C80C2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F00D67D51FE8B5AB003C80C2 /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */,
+				F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */,
+				F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		F0D1F65F1FE8B12000C346B4 = {
+			isa = PBXGroup;
+			children = (
+				F0D1F66A1FE8B12000C346B4 /* MiningPoolHubDemo */,
+				F0D1F67F1FE8B12000C346B4 /* MiningPoolHubDemoTests */,
+				F0D1F68A1FE8B12000C346B4 /* MiningPoolHubDemoUITests */,
+				F0D1F6691FE8B12000C346B4 /* Products */,
+				7A268F3C9BEFD9C9E157B1FD /* Pods */,
+				500FAF10E2449823A4C08AF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0D1F6691FE8B12000C346B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1F6681FE8B12000C346B4 /* MiningPoolHubDemo.app */,
+				F0D1F67C1FE8B12000C346B4 /* MiningPoolHubDemoTests.xctest */,
+				F0D1F6871FE8B12000C346B4 /* MiningPoolHubDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0D1F66A1FE8B12000C346B4 /* MiningPoolHubDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F00D67C31FE8B4A6003C80C2 /* MiningPoolHub */,
+				F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */,
+				F0D1F66D1FE8B12000C346B4 /* ViewController.swift */,
+				F0D1F66F1FE8B12000C346B4 /* Main.storyboard */,
+				F0D1F6721FE8B12000C346B4 /* Assets.xcassets */,
+				F0D1F6741FE8B12000C346B4 /* LaunchScreen.storyboard */,
+				F0D1F6771FE8B12000C346B4 /* Info.plist */,
+			);
+			path = MiningPoolHubDemo;
+			sourceTree = "<group>";
+		};
+		F0D1F67F1FE8B12000C346B4 /* MiningPoolHubDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1F6801FE8B12000C346B4 /* MiningPoolHubDemoTests.swift */,
+				F0D1F6821FE8B12000C346B4 /* Info.plist */,
+			);
+			path = MiningPoolHubDemoTests;
+			sourceTree = "<group>";
+		};
+		F0D1F68A1FE8B12000C346B4 /* MiningPoolHubDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1F68B1FE8B12000C346B4 /* MiningPoolHubDemoUITests.swift */,
+				F0D1F68D1FE8B12000C346B4 /* Info.plist */,
+			);
+			path = MiningPoolHubDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0D1F6671FE8B12000C346B4 /* MiningPoolHubDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D1F6901FE8B12000C346B4 /* Build configuration list for PBXNativeTarget "MiningPoolHubDemo" */;
+			buildPhases = (
+				97CB15919E53767ECF49DA03 /* [CP] Check Pods Manifest.lock */,
+				F0D1F6641FE8B12000C346B4 /* Sources */,
+				F0D1F6651FE8B12000C346B4 /* Frameworks */,
+				F0D1F6661FE8B12000C346B4 /* Resources */,
+				C0178952B6FB4762FD08A271 /* [CP] Embed Pods Frameworks */,
+				FCD52B98A04C5349B6FDAE70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiningPoolHubDemo;
+			productName = MiningPoolHubDemo;
+			productReference = F0D1F6681FE8B12000C346B4 /* MiningPoolHubDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0D1F67B1FE8B12000C346B4 /* MiningPoolHubDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D1F6931FE8B12000C346B4 /* Build configuration list for PBXNativeTarget "MiningPoolHubDemoTests" */;
+			buildPhases = (
+				69663EB5D7FDBEC6577D107F /* [CP] Check Pods Manifest.lock */,
+				F0D1F6781FE8B12000C346B4 /* Sources */,
+				F0D1F6791FE8B12000C346B4 /* Frameworks */,
+				F0D1F67A1FE8B12000C346B4 /* Resources */,
+				9239EB270C2C9054307A5DD9 /* [CP] Embed Pods Frameworks */,
+				1540B8FAF53C63D7A3FD158D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0D1F67E1FE8B12000C346B4 /* PBXTargetDependency */,
+			);
+			name = MiningPoolHubDemoTests;
+			productName = MiningPoolHubDemoTests;
+			productReference = F0D1F67C1FE8B12000C346B4 /* MiningPoolHubDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0D1F6861FE8B12000C346B4 /* MiningPoolHubDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D1F6961FE8B12000C346B4 /* Build configuration list for PBXNativeTarget "MiningPoolHubDemoUITests" */;
+			buildPhases = (
+				69AFD4ED598AE425FE23BFB1 /* [CP] Check Pods Manifest.lock */,
+				F0D1F6831FE8B12000C346B4 /* Sources */,
+				F0D1F6841FE8B12000C346B4 /* Frameworks */,
+				F0D1F6851FE8B12000C346B4 /* Resources */,
+				1DAACF64DBA325F7BE3CAC72 /* [CP] Embed Pods Frameworks */,
+				78C983E3BE376ACCD2DBEBD6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0D1F6891FE8B12000C346B4 /* PBXTargetDependency */,
+			);
+			name = MiningPoolHubDemoUITests;
+			productName = MiningPoolHubDemoUITests;
+			productReference = F0D1F6871FE8B12000C346B4 /* MiningPoolHubDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0D1F6601FE8B12000C346B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Matthew York";
+				TargetAttributes = {
+					F0D1F6671FE8B12000C346B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F0D1F67B1FE8B12000C346B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F0D1F6671FE8B12000C346B4;
+					};
+					F0D1F6861FE8B12000C346B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F0D1F6671FE8B12000C346B4;
+					};
+				};
+			};
+			buildConfigurationList = F0D1F6631FE8B12000C346B4 /* Build configuration list for PBXProject "MiningPoolHubDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0D1F65F1FE8B12000C346B4;
+			productRefGroup = F0D1F6691FE8B12000C346B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0D1F6671FE8B12000C346B4 /* MiningPoolHubDemo */,
+				F0D1F67B1FE8B12000C346B4 /* MiningPoolHubDemoTests */,
+				F0D1F6861FE8B12000C346B4 /* MiningPoolHubDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0D1F6661FE8B12000C346B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1F6761FE8B12000C346B4 /* LaunchScreen.storyboard in Resources */,
+				F0D1F6731FE8B12000C346B4 /* Assets.xcassets in Resources */,
+				F0D1F6711FE8B12000C346B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1F67A1FE8B12000C346B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1F6851FE8B12000C346B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1540B8FAF53C63D7A3FD158D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemoTests/Pods-MiningPoolHubDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DAACF64DBA325F7BE3CAC72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemoUITests/Pods-MiningPoolHubDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69663EB5D7FDBEC6577D107F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiningPoolHubDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69AFD4ED598AE425FE23BFB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiningPoolHubDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78C983E3BE376ACCD2DBEBD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemoUITests/Pods-MiningPoolHubDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9239EB270C2C9054307A5DD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemoTests/Pods-MiningPoolHubDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CB15919E53767ECF49DA03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiningPoolHubDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0178952B6FB4762FD08A271 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemo/Pods-MiningPoolHubDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemo/Pods-MiningPoolHubDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD52B98A04C5349B6FDAE70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiningPoolHubDemo/Pods-MiningPoolHubDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0D1F6641FE8B12000C346B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00D67DB1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift in Sources */,
+				F00D67D71FE8B5CB003C80C2 /* MphDefaultConfiguration.swift in Sources */,
+				F00D67D11FE8B4B7003C80C2 /* MphProviderExtensions.swift in Sources */,
+				F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */,
+				F00D67D01FE8B4B7003C80C2 /* MphWebProvider.swift in Sources */,
+				F00D67CE1FE8B4B7003C80C2 /* MphCoinProfitStatistics.swift in Sources */,
+				F00D67CF1FE8B4B7003C80C2 /* MphListResponse.swift in Sources */,
+				F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */,
+				F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */,
+				F00D67D31FE8B595003C80C2 /* MphConfiguration.swift in Sources */,
+				F00D67CD1FE8B4B7003C80C2 /* MphProviderOperationProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1F6781FE8B12000C346B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1F6811FE8B12000C346B4 /* MiningPoolHubDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1F6831FE8B12000C346B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1F68C1FE8B12000C346B4 /* MiningPoolHubDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0D1F67E1FE8B12000C346B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D1F6671FE8B12000C346B4 /* MiningPoolHubDemo */;
+			targetProxy = F0D1F67D1FE8B12000C346B4 /* PBXContainerItemProxy */;
+		};
+		F0D1F6891FE8B12000C346B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D1F6671FE8B12000C346B4 /* MiningPoolHubDemo */;
+			targetProxy = F0D1F6881FE8B12000C346B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0D1F66F1FE8B12000C346B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0D1F6701FE8B12000C346B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0D1F6741FE8B12000C346B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0D1F6751FE8B12000C346B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0D1F68E1FE8B12000C346B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0D1F68F1FE8B12000C346B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0D1F6911FE8B12000C346B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CFC61425D43FEFFAC2DC6F4 /* Pods-MiningPoolHubDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X93FN5;
+				INFOPLIST_FILE = MiningPoolHubDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewyork.MiningPoolHubDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0D1F6921FE8B12000C346B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3A8342912E81461928B899 /* Pods-MiningPoolHubDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X93FN5;
+				INFOPLIST_FILE = MiningPoolHubDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewyork.MiningPoolHubDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0D1F6941FE8B12000C346B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBEF6A2FE6C6E7FFCDB1A1ED /* Pods-MiningPoolHubDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X93FN5;
+				INFOPLIST_FILE = MiningPoolHubDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewyork.MiningPoolHubDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiningPoolHubDemo.app/MiningPoolHubDemo";
+			};
+			name = Debug;
+		};
+		F0D1F6951FE8B12000C346B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2339EF09DED9BC9FB04D566C /* Pods-MiningPoolHubDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X93FN5;
+				INFOPLIST_FILE = MiningPoolHubDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewyork.MiningPoolHubDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiningPoolHubDemo.app/MiningPoolHubDemo";
+			};
+			name = Release;
+		};
+		F0D1F6971FE8B12000C346B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5612B7B1FFC3A82D2A301195 /* Pods-MiningPoolHubDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X93FN5;
+				INFOPLIST_FILE = MiningPoolHubDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewyork.MiningPoolHubDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiningPoolHubDemo;
+			};
+			name = Debug;
+		};
+		F0D1F6981FE8B12000C346B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFBCBB6EC14A20A5C99F878 /* Pods-MiningPoolHubDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X93FN5;
+				INFOPLIST_FILE = MiningPoolHubDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewyork.MiningPoolHubDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiningPoolHubDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0D1F6631FE8B12000C346B4 /* Build configuration list for PBXProject "MiningPoolHubDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D1F68E1FE8B12000C346B4 /* Debug */,
+				F0D1F68F1FE8B12000C346B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D1F6901FE8B12000C346B4 /* Build configuration list for PBXNativeTarget "MiningPoolHubDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D1F6911FE8B12000C346B4 /* Debug */,
+				F0D1F6921FE8B12000C346B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D1F6931FE8B12000C346B4 /* Build configuration list for PBXNativeTarget "MiningPoolHubDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D1F6941FE8B12000C346B4 /* Debug */,
+				F0D1F6951FE8B12000C346B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D1F6961FE8B12000C346B4 /* Build configuration list for PBXNativeTarget "MiningPoolHubDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D1F6971FE8B12000C346B4 /* Debug */,
+				F0D1F6981FE8B12000C346B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0D1F6601FE8B12000C346B4 /* Project object */;
+}

@@ -9,7 +9,6 @@
 import Foundation
 
 public class MphDefaultConfiguration : MphConfiguration {
-
     public var apiKey: String
     
     init(apiKey: String) {

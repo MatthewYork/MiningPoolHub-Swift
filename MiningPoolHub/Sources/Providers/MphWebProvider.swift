@@ -1,5 +1,5 @@
 //
-//  WebProviderProtocol.swift
+//  MphWebProvider.swift
 //  MiningPoolHub
 //
 //  Created by Matthew York on 12/18/17.
@@ -53,7 +53,6 @@ public enum MphDomain: String {
     zclassic = "zclassic",
     zcoin = "zcoin",
     zencash = "zencash"
-
 }
 
 public class MphWebProvider {
@@ -83,39 +82,68 @@ public class MphWebProvider {
 //MARK: - Api
 extension MphWebProvider : MphProvider {
     //MARK: Unauthenticated
+    
+    /**
+     Get mining profits statistics
+     */
     public func getMiningAndProfitsStatistics(completion: @escaping (MphListResponse<MphCoinProfitStatistics>) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getminingandprofitsstatistics", completion: completion, error: error)
     }
     
+    /**
+     Get current auto switching info
+     */
     public func getAutoSwitchingAndProfitsStatistics(completion: @escaping (MphListResponse<MphAutoSwitchingProfitStatistics>) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getautoswitchingandprofitsstatistics", completion: completion, error: error)
     }
     
-    //MARK: Authenticated
+    /**
+     Fetch public pool statistics, no authentication required
+    */
     public func getPublicPoolStatistics(completion: @escaping (MphPublicPoolResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=public", completion: completion, error: error)
     }
     
+    //MARK: Authenticated
+    
+    /**
+     Get all currency's balances
+    */
     public func getUserAllBalances(completion: @escaping (MphUserBalancesResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getuserallbalances", completion: completion, error: error)
     }
     
+    /**
+     Get current block height in blockchain
+     */
     public func getBlockCount(completion: @escaping (MphBlockCountResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getblockcount", completion: completion, error: error)
     }
     
+    /**
+     Get last N blocks found as configured in admin panel
+    */
     public func getBlocksFound(completion: @escaping (MphBlocksFoundResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getblocksfound", completion: completion, error: error)
     }
     
+    /**
+     Get pool block stats
+     */
     public func getBlockStats(completion: @escaping (MphBlockStatsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getblockstats", completion: completion, error: error)
     }
     
+    /**
+     Get amount of current active workers
+     */
     public func getCurrentWorkers(completion: @escaping (MphCurrentWorkersResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getcurrentworkers", completion: completion, error: error)
     }
     
+    /**
+     Fetch all dashboard related information
+     */
     public func getDashboardData(id: String? = nil, completion: @escaping (MphDashboardResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         //Build action
         var action = "action=getdashboarddata"
@@ -124,38 +152,65 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
+    /**
+     Get current difficulty in blockchain
+     */
     public func getDifficulty(completion: @escaping (MphDifficultyResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getdifficulty", completion: completion, error: error)
     }
     
+    /**
+     Get estimated time to next block based on pool hashrate (seconds)
+     */
     public func getEstimatedTime(completion: @escaping (MphEstimatedTimeResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getestimatedtime", completion: completion, error: error)
     }
     
+    /**
+     Get current pool hashrate
+     */
     public func getPoolHashRate(completion: @escaping (MphPoolHashRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getpoolhashrate", completion: completion, error: error)
     }
     
+    /**
+     Get the information on pool settings
+    */
     public func getPoolInfo(completion: @escaping (MphPoolInfoResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getpoolinfo", completion: completion, error: error)
     }
     
+    /**
+     Get current pool share rate (shares/s)
+     */
     public func getPoolShareRate(completion: @escaping (MphPoolShareRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getpoolsharerate", completion: completion, error: error)
     }
     
+    /**
+     Fetch overall pool status, only user token is required
+    */
     public func getPoolStatus(completion: @escaping (MphPoolStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getpoolstatus", completion: completion, error: error)
     }
     
+    /**
+     Get time since last block found (seconds)
+    */
     public func getTimeSinceLastBlock(completion: @escaping (MphTimeSinceLastBlockResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=gettimesincelastblock", completion: completion, error: error)
     }
     
+    /**
+     Fetch top contributors data
+    */
     public func getTopContributors(completion: @escaping (MphTopContributorsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=gettopcontributors", completion: completion, error: error)
     }
     
+    /**
+     Fetch a users balance
+    */
     public func getUserBalance(id: String? = nil, completion: @escaping (MphUserBalanceResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getuserbalance"
         if let id = id { action += "&id=\(id)"}
@@ -163,6 +218,9 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
+    /**
+     Fetch a users hash rate
+     */
     public func getUserHashRate(id: String?, completion: @escaping (MphUserHashRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getuserhashrate"
         if let id = id { action += "&id=\(id)"}
@@ -170,6 +228,9 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
 
+    /**
+     Fetch a users share rate
+    */
     public func getUserShareRate(id: String?, completion: @escaping (MphUserShareRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getusersharerate"
         if let id = id { action += "&id=\(id)"}
@@ -177,6 +238,9 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
+    /**
+     Fetch a users overall status
+     */
     public func getUserStatus(id: String?, completion: @escaping (MphUserStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getuserstatus"
         if let id = id { action += "&id=\(id)"}
@@ -184,6 +248,9 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
+    /**
+     Get a users transactions
+     */
     public func getUserTransactions(id: String?, completion: @escaping (MphUserTransactionsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getusertransactions"
         if let id = id { action += "&id=\(id)"}
@@ -191,6 +258,9 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
+    /**
+     Fetch a users worker status
+     */
     public func getUserWorkers(id: String?, completion: @escaping (MphUserWorkersResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getuserworkers"
         if let id = id { action += "&id=\(id)"}

@@ -10,30 +10,30 @@ import Foundation
 import ObjectMapper
 
 public class MphCoinProfitStatistics : Mappable {
-	public var coin_name : String = ""
-	public var host : String = ""
-	public var host_list : String = ""
-	public var port : Int = 0
-	public var direct_mining_host : String = ""
-	public var direct_mining_host_list : String = ""
-	public var direct_mining_algo_port : Int = 0
-	public var algo : String = ""
-	public var normalized_profit : Double = 0.0
-	public var normalized_profit_amd : Double = 0.0
-	public var normalized_profit_nvidia : Double = 0.0
-	public var profit : Double = 0.0
-	public var pool_hash : String = ""
-	public var net_hash : String = ""
-	public var difficulty : Double = 0.0
-	public var reward : Int = 0
-	public var last_block : Int = 0
-	public var time_since_last_block : Int = 0
-	public var time_since_last_block_in_words : String = ""
-	public var bittrex_buy_price : Double = 0.0
-	public var cryptsy_buy_price : Int = 0
-	public var yobit_buy_price : Int = 0
-	public var poloniex_buy_price : Int = 0
-	public var highest_buy_price : Double = 0.0
+	public var coin_name: String = ""
+	public var host: String = ""
+	public var host_list: String = ""
+	public var port: Int = 0
+	public var direct_mining_host: String = ""
+	public var direct_mining_host_list: String = ""
+	public var direct_mining_algo_port: Int = 0
+	public var algo: String = ""
+	public var normalized_profit: Double = 0.0
+	public var normalized_profit_amd: Double = 0.0
+	public var normalized_profit_nvidia: Double = 0.0
+	public var profit: Double = 0.0
+	public var pool_hash: String = ""
+	public var net_hash: String = ""
+	public var difficulty: Double = 0.0
+	public var reward: Int = 0
+	public var last_block: Int = 0
+	public var time_since_last_block: Int = 0
+	public var time_since_last_block_in_words: String = ""
+	public var bittrex_buy_price: Double = 0.0
+	public var cryptsy_buy_price: Double = 0
+	public var yobit_buy_price: Double = 0
+	public var poloniex_buy_price: Double = 0
+	public var highest_buy_price: Double = 0.0
 
     // Mappable
     required public init?(map: Map) { }

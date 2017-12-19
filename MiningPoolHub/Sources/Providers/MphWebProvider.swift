@@ -201,398 +201,41 @@ extension MphWebProvider : MphProvider {
 
 // Url Request
 extension MphWebProvider {
-    fileprivate func makeJsonArrayRequest<RT:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], completion:@escaping ([RT]) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        //Add body data
-        // Create JSON String from Model
-        //let JSONString = Mapper().toJSONString(user, prettyPrint: true)
-        request.httpBody = nil
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            
-            if httpResponse.wasSuccessful {
-                let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                if let mappedObject = Mapper<RT>().mapArray(JSONString: responseString) {
-                    DispatchQueue.main.async {
-                        completion(mappedObject)
-                    }
-                }
-                else {
-                    let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
-                    DispatchQueue.main.async {
-                        error(parseError)
-                    }
-                }
-            }
-            else {
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
-    fileprivate func makeJsonArrayRequest<T:Mappable,RT:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], body: T?, completion:@escaping ([RT]) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        //Add body data
-        // Create JSON String from Model
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: body!.toJSON(), options: [])
-            //print(String(data: jsonData, encoding: String.Encoding.utf8)!)
-            request.httpBody = jsonData
-        } catch {
-            
-        }
-        //let JSONString = Mapper().toJSONString(user, prettyPrint: true)
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-            if httpResponse.wasSuccessful {
-                let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                //print(responseString)
-                
-                if let mappedObject = Mapper<RT>().mapArray(JSONString: responseString) {
-                    DispatchQueue.main.async {
-                        completion(mappedObject)
-                    }
-                }
-                else {
-                    let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
-                    DispatchQueue.main.async {
-                        error(parseError)
-                    }
-                }
-            }
-            else {
-                DispatchQueue.main.async {
-                    //print(taskError?.localizedDescription)
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
     fileprivate func makeJsonRequest<RT:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], completion:@escaping (RT) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         
+        //Build Url
         let url = requestUrl(for: action)
         var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
         
         //Add headers
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
+        for header in headers { request.addValue(header.value, forHTTPHeaderField: header.key) }
         
-        //Add body data
-        // Create JSON String from Model
-        //let JSONString = Mapper().toJSONString(user, prettyPrint: true)
+        //Set body
         request.httpBody = nil
         request.httpMethod = method.rawValue
         
+        //Make request
         let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
             
             //Clean the response to be traditional http response
             let httpResponse = self.cleanResponse(urlResponse: response)
+            if !httpResponse.wasSuccessful { DispatchQueue.main.async { error(WebProviderError(error: taskError)) } }
+            guard let responseString = String(data: data!, encoding: String.Encoding.utf8) else { error(WebProviderError(error: nil)); return }
             
-            if httpResponse.wasSuccessful {
-                let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                if let mappedObject = Mapper<RT>().map(JSONString: responseString) {
-                    DispatchQueue.main.async {
-                        completion(mappedObject)
-                    }
-                }
-                else {
-                    let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
-                    DispatchQueue.main.async {
-                        error(parseError)
-                    }
-                }
+            //Parse and return
+            guard let mappedObject = Mapper<RT>().map(JSONString: responseString) else {
+                let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
+                DispatchQueue.main.async { error(parseError) }
+                return
             }
-            else {
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
+            DispatchQueue.main.async { completion(mappedObject) }
         }
         task.resume()
         
         return task
     }
-    fileprivate func makeJsonRequest<T:Mappable,RT:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], body: T?, completion: @escaping (RT) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        //Add body data
-        // Create JSON String from Model
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: body!.toJSON(), options: [])
-            //print(String(data: jsonData, encoding: String.Encoding.utf8)!)
-            request.httpBody = jsonData
-        } catch {
-            
-        }
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            
-            if httpResponse.wasSuccessful {
-                let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                //print(responseString)
-                
-                if let mappedObject = Mapper<RT>().map(JSONString: responseString) {
-                    DispatchQueue.main.async {
-                        completion(mappedObject)
-                    }
-                }
-                else {
-                    let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
-                    DispatchQueue.main.async {
-                        error(parseError)
-                    }
-                }
-            }
-            else {
-                if data != nil {
-                    //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                    //print(responseString)
-                }
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
-    fileprivate func makeDataRequest<RT:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], data: Data, completion: @escaping (RT) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        //Add body data
-        request.httpBody = data
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            
-            if httpResponse.wasSuccessful {
-                let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                //print(responseString)
-                
-                if let mappedObject = Mapper<RT>().map(JSONString: responseString) {
-                    DispatchQueue.main.async {
-                        completion(mappedObject)
-                    }
-                }
-                else {
-                    let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
-                    DispatchQueue.main.async {
-                        error(parseError)
-                    }
-                }
-            }
-            else {
-                if data != nil {
-                    //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                    //print(responseString)
-                }
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
-    fileprivate func makeDataArrayRequest<RT:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], data: Data, completion: @escaping ([RT]) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        //Add body data
-        request.httpBody = data
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            
-            if httpResponse.wasSuccessful {
-                let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                //print(responseString)
-                
-                if let mappedObject = Mapper<RT>().mapArray(JSONString: responseString) {
-                    DispatchQueue.main.async {
-                        completion(mappedObject)
-                    }
-                }
-                else {
-                    let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(RT.self)")
-                    DispatchQueue.main.async {
-                        error(parseError)
-                    }
-                }
-            }
-            else {
-                if data != nil {
-                    //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                    //print(responseString)
-                }
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
-    fileprivate func makeVoidRequest(method: HttpMethod, action: String, headers: [String:String] = [:], completion: @escaping () -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            
-            if httpResponse.wasSuccessful {
-                //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                //print(responseString)
-                DispatchQueue.main.async {
-                    completion()
-                }
-            }
-            else {
-                if data != nil {
-                    //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                    //print(responseString)
-                }
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
-    fileprivate func makeVoidRequest<T:Mappable>(method: HttpMethod, action: String, headers: [String:String] = [:], body: T?, completion: @escaping () -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-        
-        let url = requestUrl(for: action)
-        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
-        
-        //Add headers
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        for header in headers {
-            request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        //Add body data
-        // Create JSON String from Model
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: body!.toJSON(), options: [])
-            //print(String(data: jsonData, encoding: String.Encoding.utf8)!)
-            request.httpBody = jsonData
-        } catch {
-            
-        }
-        request.httpMethod = method.rawValue
-        
-        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
-            
-            //Clean the response to be traditional http response
-            let httpResponse = self.cleanResponse(urlResponse: response)
-            
-            if httpResponse.wasSuccessful {
-               // let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                //print(responseString)
-                
-                DispatchQueue.main.async {
-                    completion()
-                }
-            }
-            else {
-                if data != nil {
-                    //let responseString = String(data: data!, encoding: String.Encoding.utf8)!
-                    //print(responseString)
-                }
-                DispatchQueue.main.async {
-                    error(WebProviderError(error: taskError))
-                }
-            }
-        }
-        task.resume()
-        
-        return task
-    }
+    
     fileprivate func makeRequest() -> MphProviderOperationProtocol {
         return URLSessionTask()
     }
@@ -617,17 +260,10 @@ extension MphWebProvider {
 }
 
 extension HTTPURLResponse {
-    var wasSuccessful: Bool {
-        return (self.statusCode >= 200 && self.statusCode < 300)
-    }
+    var wasSuccessful: Bool { return (self.statusCode >= 200 && self.statusCode < 300) }
 }
 
 public class WebProviderError: Error {
-    init() {
-        
-    }
-    
-    init(error: Error?) {
-        
-    }
+    init() { }
+    init(error: Error?) { }
 }

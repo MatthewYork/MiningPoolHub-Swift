@@ -82,12 +82,18 @@ public class MphWebProvider {
 
 //MARK: - Api
 extension MphWebProvider : MphProvider {
+    //MARK: Unauthenticated
     public func getMiningAndProfitsStatistics(completion: @escaping (MphListResponse<MphCoinProfitStatistics>) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getminingandprofitsstatistics", completion: completion, error: error)
     }
     
     public func getAutoSwitchingAndProfitsStatistics(completion: @escaping (MphListResponse<MphAutoSwitchingProfitStatistics>) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         return makeJsonRequest(method: .get, action: "action=getautoswitchingandprofitsstatistics", completion: completion, error: error)
+    }
+    
+    //MARK: Authenticated
+    public func getPublicPoolStatistics(completion: @escaping (MphPublicPoolResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=public", completion: completion, error: error)
     }
     
     public func getUserAllBalances(completion: @escaping (MphUserBalancesResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
@@ -173,6 +179,20 @@ extension MphWebProvider : MphProvider {
     
     public func getUserStatus(id: String?, completion: @escaping (MphUserStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         var action = "action=getuserstatus"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
+    
+    public func getUserTransactions(id: String?, completion: @escaping (MphUserTransactionsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        var action = "action=getusertransactions"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
+    
+    public func getUserWorkers(id: String?, completion: @escaping (MphUserWorkersResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        var action = "action=getuserworkers"
         if let id = id { action += "&id=\(id)"}
         
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)

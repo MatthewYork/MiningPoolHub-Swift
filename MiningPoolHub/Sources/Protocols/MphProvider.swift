@@ -12,6 +12,7 @@ public protocol MphProvider {
     //No Api Key Required
     func getMiningAndProfitsStatistics(completion: @escaping (MphListResponse<MphCoinProfitStatistics>) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getAutoSwitchingAndProfitsStatistics(completion: @escaping (MphListResponse<MphAutoSwitchingProfitStatistics>) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    func getPublicPoolStatistics(completion: @escaping (MphPublicPoolResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     
     //Api Key Required
     func getUserAllBalances(completion: @escaping (MphUserBalancesResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
@@ -32,6 +33,8 @@ public protocol MphProvider {
     func getUserHashRate(id: String?, completion: @escaping (MphUserHashRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getUserShareRate(id: String?, completion: @escaping (MphUserShareRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getUserStatus(id: String?, completion: @escaping (MphUserStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    func getUserTransactions(id: String?, completion: @escaping (MphUserTransactionsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    func getUserWorkers(id: String?, completion: @escaping (MphUserWorkersResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
 }
 
 

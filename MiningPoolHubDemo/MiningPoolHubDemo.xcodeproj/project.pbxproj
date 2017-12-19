@@ -65,6 +65,12 @@
 		F00D68471FE9AD85003C80C2 /* MphUserStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68461FE9AD85003C80C2 /* MphUserStatusResponse.swift */; };
 		F00D68491FE9ADA0003C80C2 /* MphUserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68481FE9ADA0003C80C2 /* MphUserStatus.swift */; };
 		F00D684B1FE9AE04003C80C2 /* MphUserStatusShares.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D684A1FE9AE04003C80C2 /* MphUserStatusShares.swift */; };
+		F00D684D1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D684C1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift */; };
+		F00D684F1FE9B001003C80C2 /* MphUserTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D684E1FE9B001003C80C2 /* MphUserTransactions.swift */; };
+		F00D68511FE9B024003C80C2 /* MphUserTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68501FE9B023003C80C2 /* MphUserTransaction.swift */; };
+		F00D68531FE9B247003C80C2 /* MphUserWorkersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68521FE9B247003C80C2 /* MphUserWorkersResponse.swift */; };
+		F00D68551FE9B258003C80C2 /* MphWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68541FE9B258003C80C2 /* MphWorker.swift */; };
+		F00D68571FE9B349003C80C2 /* MphPublicPoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68561FE9B349003C80C2 /* MphPublicPoolResponse.swift */; };
 		F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */; };
 		F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66D1FE8B12000C346B4 /* ViewController.swift */; };
 		F0D1F6711FE8B12000C346B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1F66F1FE8B12000C346B4 /* Main.storyboard */; };
@@ -154,6 +160,12 @@
 		F00D68461FE9AD85003C80C2 /* MphUserStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserStatusResponse.swift; sourceTree = "<group>"; };
 		F00D68481FE9ADA0003C80C2 /* MphUserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserStatus.swift; sourceTree = "<group>"; };
 		F00D684A1FE9AE04003C80C2 /* MphUserStatusShares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserStatusShares.swift; sourceTree = "<group>"; };
+		F00D684C1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserTransactionsResponse.swift; sourceTree = "<group>"; };
+		F00D684E1FE9B001003C80C2 /* MphUserTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserTransactions.swift; sourceTree = "<group>"; };
+		F00D68501FE9B023003C80C2 /* MphUserTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserTransaction.swift; sourceTree = "<group>"; };
+		F00D68521FE9B247003C80C2 /* MphUserWorkersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserWorkersResponse.swift; sourceTree = "<group>"; };
+		F00D68541FE9B258003C80C2 /* MphWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphWorker.swift; sourceTree = "<group>"; };
+		F00D68561FE9B349003C80C2 /* MphPublicPoolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPublicPoolResponse.swift; sourceTree = "<group>"; };
 		F0D1F6681FE8B12000C346B4 /* MiningPoolHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiningPoolHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D1F66D1FE8B12000C346B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -332,6 +344,12 @@
 				F00D68461FE9AD85003C80C2 /* MphUserStatusResponse.swift */,
 				F00D68481FE9ADA0003C80C2 /* MphUserStatus.swift */,
 				F00D684A1FE9AE04003C80C2 /* MphUserStatusShares.swift */,
+				F00D684C1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift */,
+				F00D684E1FE9B001003C80C2 /* MphUserTransactions.swift */,
+				F00D68501FE9B023003C80C2 /* MphUserTransaction.swift */,
+				F00D68521FE9B247003C80C2 /* MphUserWorkersResponse.swift */,
+				F00D68541FE9B258003C80C2 /* MphWorker.swift */,
+				F00D68561FE9B349003C80C2 /* MphPublicPoolResponse.swift */,
 			);
 			path = Dtos;
 			sourceTree = "<group>";
@@ -688,6 +706,7 @@
 				F00D68311FE99FA0003C80C2 /* MphPoolShareRateResponse.swift in Sources */,
 				F00D67D71FE8B5CB003C80C2 /* MphDefaultConfiguration.swift in Sources */,
 				F00D68111FE96C3A003C80C2 /* MphPoolInfo.swift in Sources */,
+				F00D68511FE9B024003C80C2 /* MphUserTransaction.swift in Sources */,
 				F00D683D1FE9A5F6003C80C2 /* MphTopContributorHashes.swift in Sources */,
 				F00D68371FE9A266003C80C2 /* MphTimeSinceLastBlockResponse.swift in Sources */,
 				F00D68251FE97F0F003C80C2 /* MphObjectData.swift in Sources */,
@@ -696,6 +715,8 @@
 				F00D67D11FE8B4B7003C80C2 /* MphProviderExtensions.swift in Sources */,
 				F00D681D1FE97AD3003C80C2 /* MphDifficultyResponse.swift in Sources */,
 				F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */,
+				F00D684F1FE9B001003C80C2 /* MphUserTransactions.swift in Sources */,
+				F00D68571FE9B349003C80C2 /* MphPublicPoolResponse.swift in Sources */,
 				F00D67EF1FE95E1E003C80C2 /* MphBlockStatsResponse.swift in Sources */,
 				F00D67D01FE8B4B7003C80C2 /* MphWebProvider.swift in Sources */,
 				F00D68451FE9ACC3003C80C2 /* MphUserShareRateResponse.swift in Sources */,
@@ -711,6 +732,7 @@
 				F00D67FB1FE9659D003C80C2 /* MphDashboardResponse.swift in Sources */,
 				F00D68171FE96D00003C80C2 /* MphRecentCredit.swift in Sources */,
 				F00D68431FE9AB9D003C80C2 /* MphUserHashRateResponse.swift in Sources */,
+				F00D684D1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift in Sources */,
 				F00D683B1FE9A5DA003C80C2 /* MphTopContributor.swift in Sources */,
 				F00D67F31FE95E8E003C80C2 /* MphBlockStat.swift in Sources */,
 				F00D67E71FE8D387003C80C2 /* MphVersionRuntimeResponse.swift in Sources */,
@@ -721,6 +743,7 @@
 				F00D68291FE9806E003C80C2 /* MphDoubleData.swift in Sources */,
 				F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */,
 				F00D68351FE9A06E003C80C2 /* MphPoolStatus.swift in Sources */,
+				F00D68551FE9B258003C80C2 /* MphWorker.swift in Sources */,
 				F00D67EB1FE959C1003C80C2 /* MphListData.swift in Sources */,
 				F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */,
 				F00D68151FE96C62003C80C2 /* MphPersonalDashboard.swift in Sources */,
@@ -735,6 +758,7 @@
 				F00D67DF1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift in Sources */,
 				F00D68331FE9A066003C80C2 /* MphPoolStatusResponse.swift in Sources */,
 				F00D67CD1FE8B4B7003C80C2 /* MphProviderOperationProtocol.swift in Sources */,
+				F00D68531FE9B247003C80C2 /* MphUserWorkersResponse.swift in Sources */,
 				F00D68131FE96C3A003C80C2 /* MphPool.swift in Sources */,
 				F00D67F71FE9637D003C80C2 /* MphCurrentWorkersResponse.swift in Sources */,
 				F00D68101FE96C3A003C80C2 /* MphCredit.swift in Sources */,

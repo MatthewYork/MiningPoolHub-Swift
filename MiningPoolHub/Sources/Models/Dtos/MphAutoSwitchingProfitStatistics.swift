@@ -22,9 +22,7 @@ public class MphAutoSwitchingProfitStatistics: Mappable {
     public var normalized_profit_nvidia: Double = 0
     
     // Mappable
-    required public init?(map: Map) {
-        
-    }
+    required public init?(map: Map) { }
     
     public func mapping(map: Map) {
         

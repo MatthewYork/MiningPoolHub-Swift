@@ -1,5 +1,5 @@
 //
-//  MphListResponse.swift
+//  MphVersionRuntimeResponse.swift
 //  MiningPoolHubDemo
 //
 //  Created by Matthew York on 12/18/17.
@@ -9,16 +9,17 @@
 import Foundation
 import ObjectMapper
 
-public class MphListResponse<T:Mappable> : Mappable {
-	public var success : Bool = false
-	public var response : [T] = []
-
-
+public class MphVersionRuntimeResponse : Mappable {
+    public var version: String = ""
+    public var runtime: Double = 0.0
+    
+    init() { }
+    
     // Mappable
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-		success <- map["success"]
-        response <- map["return"]
-	}
+        version <- map["version"]
+        runtime <- map["runtime"]
+    }
 }

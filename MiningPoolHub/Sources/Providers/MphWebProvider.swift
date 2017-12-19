@@ -90,6 +90,14 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: "action=getautoswitchingandprofitsstatistics", completion: completion, error: error)
     }
     
+    public func getUserAllBalances(completion: @escaping (MphUserBalancesResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getuserallbalances", completion: completion, error: error)
+    }
+    
+    public func getBlockCount(completion: @escaping (MphBlockCountResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getblockcount", completion: completion, error: error)
+    }
+    
     // MARK: - Access
 //    public func login(loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
 //        return makeJsonRequest(method: .post, action: "/api/access/login", body: loginRequest, completion: completion, error: error)

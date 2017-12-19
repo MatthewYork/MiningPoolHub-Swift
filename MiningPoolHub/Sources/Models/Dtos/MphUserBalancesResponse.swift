@@ -1,5 +1,5 @@
 //
-//  MphListResponse.swift
+//  MphUserBalancesResponse.swift
 //  MiningPoolHubDemo
 //
 //  Created by Matthew York on 12/18/17.
@@ -9,16 +9,13 @@
 import Foundation
 import ObjectMapper
 
-public class MphListResponse<T:Mappable> : Mappable {
-	public var success : Bool = false
-	public var response : [T] = []
-
-
+public class MphUserBalancesResponse : Mappable {
+    public var getuserallbalances = MphUserBalances()
+    
     // Mappable
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-		success <- map["success"]
-        response <- map["return"]
-	}
+        getuserallbalances <- map["getuserallbalances"]
+    }
 }

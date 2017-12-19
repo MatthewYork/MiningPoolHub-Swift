@@ -36,9 +36,7 @@ public class MphCoinProfitStatistics : Mappable {
 	public var highest_buy_price : Double = 0.0
 
     // Mappable
-    required public init?(map: Map) {
-        
-    }
+    required public init?(map: Map) { }
     
     public func mapping(map: Map) {
 

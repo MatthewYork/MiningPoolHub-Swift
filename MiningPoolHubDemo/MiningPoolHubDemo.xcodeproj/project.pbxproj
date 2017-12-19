@@ -19,6 +19,12 @@
 		F00D67D71FE8B5CB003C80C2 /* MphDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */; };
 		F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */; };
 		F00D67DB1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */; };
+		F00D67DD1FE8CEFC003C80C2 /* MphBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DC1FE8CEFC003C80C2 /* MphBalance.swift */; };
+		F00D67DF1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DE1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift */; };
+		F00D67E11FE8D044003C80C2 /* MphUserBalances.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E01FE8D044003C80C2 /* MphUserBalances.swift */; };
+		F00D67E31FE8D332003C80C2 /* MphBlockCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E21FE8D332003C80C2 /* MphBlockCountResponse.swift */; };
+		F00D67E51FE8D35B003C80C2 /* MphBlockCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E41FE8D35B003C80C2 /* MphBlockCount.swift */; };
+		F00D67E71FE8D387003C80C2 /* MphVersionRuntimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E61FE8D387003C80C2 /* MphVersionRuntimeResponse.swift */; };
 		F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */; };
 		F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66D1FE8B12000C346B4 /* ViewController.swift */; };
 		F0D1F6711FE8B12000C346B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1F66F1FE8B12000C346B4 /* Main.storyboard */; };
@@ -62,6 +68,12 @@
 		F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphDefaultConfiguration.swift; sourceTree = "<group>"; };
 		F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphProvider.swift; sourceTree = "<group>"; };
 		F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphAutoSwitchingProfitStatistics.swift; sourceTree = "<group>"; };
+		F00D67DC1FE8CEFC003C80C2 /* MphBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBalance.swift; sourceTree = "<group>"; };
+		F00D67DE1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserBalancesResponse.swift; sourceTree = "<group>"; };
+		F00D67E01FE8D044003C80C2 /* MphUserBalances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserBalances.swift; sourceTree = "<group>"; };
+		F00D67E21FE8D332003C80C2 /* MphBlockCountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlockCountResponse.swift; sourceTree = "<group>"; };
+		F00D67E41FE8D35B003C80C2 /* MphBlockCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlockCount.swift; sourceTree = "<group>"; };
+		F00D67E61FE8D387003C80C2 /* MphVersionRuntimeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphVersionRuntimeResponse.swift; sourceTree = "<group>"; };
 		F0D1F6681FE8B12000C346B4 /* MiningPoolHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiningPoolHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D1F66D1FE8B12000C346B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +206,12 @@
 				F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */,
 				F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */,
 				F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */,
+				F00D67E61FE8D387003C80C2 /* MphVersionRuntimeResponse.swift */,
+				F00D67DC1FE8CEFC003C80C2 /* MphBalance.swift */,
+				F00D67DE1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift */,
+				F00D67E01FE8D044003C80C2 /* MphUserBalances.swift */,
+				F00D67E21FE8D332003C80C2 /* MphBlockCountResponse.swift */,
+				F00D67E41FE8D35B003C80C2 /* MphBlockCount.swift */,
 			);
 			path = Dtos;
 			sourceTree = "<group>";
@@ -552,10 +570,16 @@
 				F00D67D01FE8B4B7003C80C2 /* MphWebProvider.swift in Sources */,
 				F00D67CE1FE8B4B7003C80C2 /* MphCoinProfitStatistics.swift in Sources */,
 				F00D67CF1FE8B4B7003C80C2 /* MphListResponse.swift in Sources */,
+				F00D67E51FE8D35B003C80C2 /* MphBlockCount.swift in Sources */,
+				F00D67E71FE8D387003C80C2 /* MphVersionRuntimeResponse.swift in Sources */,
 				F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */,
 				F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */,
 				F00D67D31FE8B595003C80C2 /* MphConfiguration.swift in Sources */,
+				F00D67DD1FE8CEFC003C80C2 /* MphBalance.swift in Sources */,
+				F00D67E31FE8D332003C80C2 /* MphBlockCountResponse.swift in Sources */,
+				F00D67DF1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift in Sources */,
 				F00D67CD1FE8B4B7003C80C2 /* MphProviderOperationProtocol.swift in Sources */,
+				F00D67E11FE8D044003C80C2 /* MphUserBalances.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

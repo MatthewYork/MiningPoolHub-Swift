@@ -98,6 +98,26 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: "action=getblockcount", completion: completion, error: error)
     }
     
+    public func getBlocksFound(completion: @escaping (MphBlocksFoundResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getblocksfound", completion: completion, error: error)
+    }
+    
+    public func getBlockStats(completion: @escaping (MphBlockStatsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getblockstats", completion: completion, error: error)
+    }
+    
+    public func getCurrentWorkers(completion: @escaping (MphCurrentWorkersResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getcurrentworkers", completion: completion, error: error)
+    }
+    
+    public func getDashboardData(id: String? = nil, completion: @escaping (MphDashboardResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        //Build action
+        var action = "action=getdashboarddata"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
+    
     // MARK: - Access
 //    public func login(loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
 //        return makeJsonRequest(method: .post, action: "/api/access/login", body: loginRequest, completion: completion, error: error)

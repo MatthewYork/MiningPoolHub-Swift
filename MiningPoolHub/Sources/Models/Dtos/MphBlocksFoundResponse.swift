@@ -1,21 +1,21 @@
 //
-//  MphBlockCountResponse.swift
+//  MphBlocksFoundResponse.swift
 //  MiningPoolHubDemo
 //
-//  Created by Matthew York on 12/18/17.
+//  Created by Matthew York on 12/19/17.
 //  Copyright © 2017 Matthew York. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-public class MphBlockCountResponse : Mappable {
-    public var block = MphBlockCount()
+public class MphBlocksFoundResponse : Mappable {
+    public var blocks = MphBlocksFound()
     
     // Mappable
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        block <- map["getblockcount"]
+        blocks <- map["getblocksfound"]
     }
 }

@@ -10,12 +10,12 @@ import Foundation
 import ObjectMapper
 
 public class MphUserBalancesResponse : Mappable {
-    public var getuserallbalances = MphUserBalances()
+    public var balances = MphUserBalances()
     
     // Mappable
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        getuserallbalances <- map["getuserallbalances"]
+        balances <- map["getuserallbalances"]
     }
 }

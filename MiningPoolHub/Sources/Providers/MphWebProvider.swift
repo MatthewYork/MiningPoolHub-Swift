@@ -134,6 +134,14 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: "action=getpoolinfo", completion: completion, error: error)
     }
     
+    public func getPoolShareRate(completion: @escaping (MphPoolShareRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getpoolsharerate", completion: completion, error: error)
+    }
+    
+    public func getPoolStatus(completion: @escaping (MphPoolStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getpoolstatus", completion: completion, error: error)
+    }
+    
     // MARK: - Access
 //    public func login(loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
 //        return makeJsonRequest(method: .post, action: "/api/access/login", body: loginRequest, completion: completion, error: error)

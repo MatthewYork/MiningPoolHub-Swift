@@ -142,6 +142,21 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: "action=getpoolstatus", completion: completion, error: error)
     }
     
+    public func getTimeSinceLastBlock(completion: @escaping (MphTimeSinceLastBlockResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=gettimesincelastblock", completion: completion, error: error)
+    }
+    
+    public func getTopContributors(completion: @escaping (MphTopContributorsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=gettopcontributors", completion: completion, error: error)
+    }
+    
+    public func getUserBalance(id: String? = nil, completion: @escaping (MphUserBalanceResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        var action = "action=getuserbalance"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
+    
     // MARK: - Access
 //    public func login(loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
 //        return makeJsonRequest(method: .post, action: "/api/access/login", body: loginRequest, completion: completion, error: error)

@@ -157,12 +157,26 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
-    // MARK: - Access
-//    public func login(loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
-//        return makeJsonRequest(method: .post, action: "/api/access/login", body: loginRequest, completion: completion, error: error)
-//    }
+    public func getUserHashRate(id: String?, completion: @escaping (MphUserHashRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        var action = "action=getuserhashrate"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
+
+    public func getUserShareRate(id: String?, completion: @escaping (MphUserShareRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        var action = "action=getusersharerate"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
     
-    
+    public func getUserStatus(id: String?, completion: @escaping (MphUserStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        var action = "action=getuserstatus"
+        if let id = id { action += "&id=\(id)"}
+        
+        return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
 }
 
 // Url Request

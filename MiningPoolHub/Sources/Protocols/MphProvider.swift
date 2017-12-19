@@ -29,6 +29,9 @@ public protocol MphProvider {
     func getTimeSinceLastBlock(completion: @escaping (MphTimeSinceLastBlockResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getTopContributors(completion: @escaping (MphTopContributorsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getUserBalance(id: String?, completion: @escaping (MphUserBalanceResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    func getUserHashRate(id: String?, completion: @escaping (MphUserHashRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    func getUserShareRate(id: String?, completion: @escaping (MphUserShareRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    func getUserStatus(id: String?, completion: @escaping (MphUserStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
 }
 
 

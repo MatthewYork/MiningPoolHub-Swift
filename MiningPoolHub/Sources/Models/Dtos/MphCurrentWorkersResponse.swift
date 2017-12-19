@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class MphCurrentWorkersResponse : Mappable {
-    public var workers = MphCurrentWorkers()
+    public var workers: MphIntegerData = MphIntegerData()
     
     // Mappable
     required public init?(map: Map) { }

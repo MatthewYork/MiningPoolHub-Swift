@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class MphBlockCountResponse : Mappable {
-    public var block = MphBlockCount()
+    public var block: MphIntegerData = MphIntegerData()
     
     // Mappable
     required public init?(map: Map) { }

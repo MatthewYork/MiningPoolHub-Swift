@@ -1,5 +1,5 @@
 //
-//  MphCurrentWorkers.swift
+//  MphBlocksFound.swift
 //  MiningPoolHubDemo
 //
 //  Created by Matthew York on 12/19/17.
@@ -9,8 +9,8 @@
 import Foundation
 import ObjectMapper
 
-public class MphCurrentWorkers : MphVersionRuntimeResponse {
-    public var data: Int = 0
+public class MphListData<T:Mappable> : MphVersionRuntimeResponse {
+    public var data: [T] = []
     
     override init() { super.init() }
     

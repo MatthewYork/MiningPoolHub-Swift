@@ -1,21 +1,21 @@
 //
-//  MphUserBalancesResponse.swift
+//  MphDifficultyResponse.swift
 //  MiningPoolHubDemo
 //
-//  Created by Matthew York on 12/18/17.
+//  Created by Matthew York on 12/19/17.
 //  Copyright © 2017 Matthew York. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-public class MphUserBalancesResponse : Mappable {
-    public var balances = MphListData<MphBalance>()
+public class MphDifficultyResponse : Mappable {
+    public var difficulty: MphIntegerData = MphIntegerData()
     
     // Mappable
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        balances <- map["getuserallbalances"]
+        difficulty <- map["getdifficulty"]
     }
 }

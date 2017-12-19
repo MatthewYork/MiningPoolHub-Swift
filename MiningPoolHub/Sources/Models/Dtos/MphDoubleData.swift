@@ -1,16 +1,16 @@
 //
-//  MphUserBalances.swift
+//  MphDoubleData.swift
 //  MiningPoolHubDemo
 //
-//  Created by Matthew York on 12/18/17.
+//  Created by Matthew York on 12/19/17.
 //  Copyright © 2017 Matthew York. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-public class MphUserBalances : MphVersionRuntimeResponse {
-    public var data: [MphBalance] = []
+public class MphDoubleData : MphVersionRuntimeResponse {
+    public var data: Double = 0.0
     
     override init() { super.init() }
     

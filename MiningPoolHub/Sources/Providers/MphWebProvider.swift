@@ -118,6 +118,22 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
     }
     
+    public func getDifficulty(completion: @escaping (MphDifficultyResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getdifficulty", completion: completion, error: error)
+    }
+    
+    public func getEstimatedTime(completion: @escaping (MphEstimatedTimeResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getestimatedtime", completion: completion, error: error)
+    }
+    
+    public func getPoolHashRate(completion: @escaping (MphPoolHashRateResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getpoolhashrate", completion: completion, error: error)
+    }
+    
+    public func getPoolInfo(completion: @escaping (MphPoolInfoResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        return makeJsonRequest(method: .get, action: "action=getpoolinfo", completion: completion, error: error)
+    }
+    
     // MARK: - Access
 //    public func login(loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
 //        return makeJsonRequest(method: .post, action: "/api/access/login", body: loginRequest, completion: completion, error: error)

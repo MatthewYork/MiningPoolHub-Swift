@@ -1,15 +1,15 @@
 //
-//  MphBlockCount.swift
+//  MphEstimatedTime.swift
 //  MiningPoolHubDemo
 //
-//  Created by Matthew York on 12/18/17.
+//  Created by Matthew York on 12/19/17.
 //  Copyright © 2017 Matthew York. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-public class MphBlockCount : MphVersionRuntimeResponse {
+public class MphIntegerData : MphVersionRuntimeResponse {
     public var data: Int = 0
     
     override init() { super.init() }

@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class MphDashboardResponse : Mappable {
-    public var dashboard = MphDashboard()
+    public var dashboard = MphObjectData<MphDashboardData>()
     
     // Mappable
     required public init?(map: Map) { }

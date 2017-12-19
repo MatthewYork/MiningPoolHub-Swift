@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class MphBlocksFoundResponse : Mappable {
-    public var blocks = MphBlocksFound()
+    public var blocks = MphListData<MphBlock>()
     
     // Mappable
     required public init?(map: Map) { }

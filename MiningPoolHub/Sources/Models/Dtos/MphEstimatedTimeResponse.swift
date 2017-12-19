@@ -1,21 +1,21 @@
 //
-//  MphUserBalancesResponse.swift
+//  MphEstimatedTimeResponse.swift
 //  MiningPoolHubDemo
 //
-//  Created by Matthew York on 12/18/17.
+//  Created by Matthew York on 12/19/17.
 //  Copyright © 2017 Matthew York. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-public class MphUserBalancesResponse : Mappable {
-    public var balances = MphListData<MphBalance>()
+public class MphEstimatedTimeResponse : Mappable {
+    public var estimate: MphIntegerData = MphIntegerData()
     
     // Mappable
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        balances <- map["getuserallbalances"]
+        estimate <- map["getestimatedtime"]
     }
 }

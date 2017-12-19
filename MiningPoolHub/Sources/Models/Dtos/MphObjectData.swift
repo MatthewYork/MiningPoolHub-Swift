@@ -1,5 +1,5 @@
 //
-//  MphDashboard.swift
+//  MphObjectData.swift
 //  MiningPoolHubDemo
 //
 //  Created by Matthew York on 12/19/17.
@@ -9,8 +9,8 @@
 import Foundation
 import ObjectMapper
 
-public class MphDashboard : MphVersionRuntimeResponse {
-    public var data: MphDashboardData = MphDashboardData()
+public class MphObjectData<T:Mappable> : MphVersionRuntimeResponse {
+    public var data: T?
     
     override init() { super.init() }
     

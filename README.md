@@ -68,5 +68,9 @@ Use the default <code>.root</code> domain for the root domain of the site. For a
 provider.setCustom(domain: "someCustomDomain")
 ```
 
+### Limitations
+**Floating Point Precision**
+As noted by [this stackoverflow question](https://stackoverflow.com/questions/17986409/does-nsjsonserialization-deserialize-numbers-as-nsdecimalnumber/39553617#39553617), the Swift <code>JSONSerialization</code> class used to handle core JSON serialization and deserialization will cast by default to Double instead of Decimal. Because of this, you may notice some rounding errors at the lowest decimal place. Sorry!
+
 ### Thanks
 A special thanks to MiningPoolHub for a great community and site!

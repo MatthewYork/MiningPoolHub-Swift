@@ -35,6 +35,9 @@ public protocol MphProvider {
     func getUserStatus(id: String?, completion: @escaping (MphUserStatusResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getUserTransactions(id: String?, completion: @escaping (MphUserTransactionsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
     func getUserWorkers(id: String?, completion: @escaping (MphUserWorkersResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
+    
+    //Mining Pool Hub Stats
+    func getMiningPoolHubStats(currency: MphsCurrency, completion: @escaping (MphsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol
 }
 
 

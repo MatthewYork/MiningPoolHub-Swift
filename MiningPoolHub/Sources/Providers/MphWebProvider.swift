@@ -55,6 +55,16 @@ public enum MphDomain: String {
     zencash = "zencash"
 }
 
+public enum MphsCurrency: String {
+    case usd = "USD",
+    eur = "EUR",
+    gbp = "GBP",
+    btc = "BTC",
+    ltc = "LTC",
+    eth = "ETH",
+    xmr = "XMR"
+}
+
 public class MphWebProvider {
 
     var operationQueue = OperationQueue()
@@ -81,7 +91,7 @@ public class MphWebProvider {
 
 //MARK: - Api
 extension MphWebProvider : MphProvider {
-    //MARK: Unauthenticated
+    //MARK: - Unauthenticated
     
     /**
      Get mining profits statistics
@@ -104,7 +114,7 @@ extension MphWebProvider : MphProvider {
         return makeJsonRequest(method: .get, action: "action=public", completion: completion, error: error)
     }
     
-    //MARK: Authenticated
+    //MARK: - Authenticated
     
     /**
      Get all currency's balances
@@ -266,6 +276,43 @@ extension MphWebProvider : MphProvider {
         if let id = id { action += "&id=\(id)"}
         
         return makeJsonRequest(method: .get, action: action, completion: completion, error: error)
+    }
+    
+    //MARK: - Mining Pool Hub Stats
+    
+    /**
+     Fetches aggregate statistics from miningpoolhubstats.com
+     */
+    public func getMiningPoolHubStats(currency: MphsCurrency, completion: @escaping (MphsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
+        //Build Url
+        let url = "https://miningpoolhubstats.com/api/"+currency.rawValue+"/"+configuration.apiKey
+        var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
+        
+        //Add headers
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        //Set body
+        request.httpBody = nil
+        request.httpMethod = "GET"
+        
+        //Make request
+        let task = urlSession.dataTask(with: request) {(data, response, taskError)  -> Void in
+            
+            //Clean the response to be traditional http response
+            let httpResponse = self.cleanResponse(urlResponse: response)
+            if !httpResponse.wasSuccessful { DispatchQueue.main.async { error(WebProviderError(error: taskError)) } }
+            guard let responseString = String(data: data!, encoding: String.Encoding.utf8) else { error(WebProviderError(error: nil)); return }
+            
+            //Parse and return
+            guard let mappedObject = Mapper<MphsResponse>().map(JSONString: responseString) else {
+                let parseError = MapError(key: "", currentValue: "", reason: "Error parsing response object: \(MphsResponse.self)")
+                DispatchQueue.main.async { error(parseError) }
+                return
+            }
+            DispatchQueue.main.async { completion(mappedObject) }
+        }
+        task.resume()
+        return task
     }
 }
 

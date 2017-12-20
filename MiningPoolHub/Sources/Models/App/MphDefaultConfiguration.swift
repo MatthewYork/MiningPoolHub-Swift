@@ -11,7 +11,7 @@ import Foundation
 public class MphDefaultConfiguration : MphConfiguration {
     public var apiKey: String
     
-    init(apiKey: String) {
+    public init(apiKey: String) {
         self.apiKey = apiKey
     }
 }

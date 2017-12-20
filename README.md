@@ -1,6 +1,8 @@
 # MiningPoolHub-Swift
 MiningPoolHub-Swift is a complete API wrapper for the [miningpoolhub.com API](https://github.com/miningpoolhub/php-mpos/wiki/API-Reference) written in the Swift language. All working calls, both authenticated and unauthenticated are available natively in swift code. The goal was to empower others to help build applications for this great community.
 
+This library also supports [miningpoolhubstats.com](https://miningpoolhubstats.com) for balance tracking
+
 Built in Swift 4.0
 
 ### Donate

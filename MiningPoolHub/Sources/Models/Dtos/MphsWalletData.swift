@@ -12,25 +12,25 @@ import ObjectMapper
 public class MphsWalletData: Mappable {
     public var coin: String = ""
     public var confirmed: Double = 0.0
-    public var unconfirmed: Int = 0
-    public var on_exchange: Int = 0
+    public var unconfirmed: Double = 0
+    public var on_exchange: Double = 0
     public var total: Double = 0.0
     public var payout_last_24: Double = 0.0
-    public var hourly_estimate: Int = 0
-    public var hashrate: Int = 0
+    public var hourly_estimate: Double = 0.0
+    public var hashrate: Double = 0.0
     public var code: String = ""
     public var confirmed_value: Double = 0.0
-    public var unconfirmed_value: Int = 0
-    public var on_exchange_value: Int = 0
+    public var unconfirmed_value: Double = 0.0
+    public var on_exchange_value: Double = 0.0
     public var total_value: Double = 0.0
     public var payout_last_24_value: Double = 0.0
-    public var hourly_estimate_value: Int = 0
+    public var hourly_estimate_value: Double = 0.0
     public var is_autoconvert: Int = 0
     public var is_payout_coin: Int = 0
     public var min_payout: Double = 0.0
     public var payout_fee: Double = 0.0
-    public var payout_percent: Int = 0
-    public var payout_fee_percent: Int = 0
+    public var payout_percent: Double = 0.0
+    public var payout_fee_percent: Double = 0.0
     
     public init() {}
     

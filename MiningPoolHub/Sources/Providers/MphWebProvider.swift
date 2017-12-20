@@ -61,20 +61,20 @@ public class MphWebProvider {
     let urlSession: URLSession = URLSession(configuration:URLSessionConfiguration.default)
     let baseAddress: String = "miningpoolhub.com/index.php?page=api&"
     let configuration: MphConfiguration
-    var mphDomain: MphDomain = MphDomain.root
+    public var mphDomain: MphDomain = MphDomain.root
     var customDomain: String?
     
     //MARK: - Init
-    init(configuration: MphConfiguration) {
+    public init(configuration: MphConfiguration) {
         self.configuration = configuration
     }
     
     //MARK: - Domains
-    func set(domain: MphDomain) {
+    public func set(domain: MphDomain) {
         self.mphDomain = domain
         customDomain = nil
     }
-    func setCustom(domain: String) {
+    public func setCustom(domain: String) {
         customDomain = domain
     }
 }

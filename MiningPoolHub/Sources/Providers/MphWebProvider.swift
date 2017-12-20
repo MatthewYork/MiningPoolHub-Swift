@@ -55,14 +55,20 @@ public enum MphDomain: String {
     zencash = "zencash"
 }
 
-public enum MphsCurrency: String {
-    case usd = "USD",
-    eur = "EUR",
-    gbp = "GBP",
-    btc = "BTC",
-    ltc = "LTC",
-    eth = "ETH",
-    xmr = "XMR"
+public enum MphsCurrency: Int {
+    case usd, eur, gbp, btc, ltc, eth, xmr
+    
+    func description() -> String {
+        switch self {
+        case .usd: return "USD"
+        case .eur: return "EUR"
+        case .gbp: return "GBP"
+        case .btc: return "BTC"
+        case .ltc: return "LTC"
+        case .eth: return "ETH"
+        case .xmr: return "XMR"
+        }
+    }
 }
 
 public class MphWebProvider {
@@ -285,7 +291,7 @@ extension MphWebProvider : MphProvider {
      */
     public func getMiningPoolHubStats(currency: MphsCurrency, completion: @escaping (MphsResponse) -> (), error: @escaping (Error) -> ()) -> MphProviderOperationProtocol {
         //Build Url
-        let url = "https://miningpoolhubstats.com/api/"+currency.rawValue+"/"+configuration.apiKey
+        let url = "https://miningpoolhubstats.com/api/"+currency.description()+"/"+configuration.apiKey
         var request = URLRequest(url: URL(string:url)!, cachePolicy: URLRequest.CachePolicy.reloadIgnoringCacheData, timeoutInterval: 20.0)
         
         //Add headers

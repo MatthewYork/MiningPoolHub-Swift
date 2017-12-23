@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol MphConfiguration {
-    var apiKey: String {get}
+    var apiKey: String {get set}
 }

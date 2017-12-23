@@ -96,7 +96,7 @@ public class MphWebProvider {
     var operationQueue = OperationQueue()
     let urlSession: URLSession = URLSession(configuration:URLSessionConfiguration.default)
     let baseAddress: String = "miningpoolhub.com/index.php?page=api&"
-    let configuration: MphConfiguration
+    var configuration: MphConfiguration
     public var mphDomain: MphDomain = MphDomain.root
     var customDomain: String?
     
@@ -112,6 +112,11 @@ public class MphWebProvider {
     }
     public func setCustom(domain: String) {
         customDomain = domain
+    }
+    
+    //MARK: - Token Management
+    public func set(apiKey: String) {
+        configuration.apiKey = apiKey
     }
 }
 

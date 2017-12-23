@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MiningPoolHub-Swift"
-  s.version      = "4.1.3"
+  s.version      = "4.1.4"
   s.summary      = "MiningPoolHub API Wrapper in Swift"
 
   # This description is used to generate tags and improve search results.

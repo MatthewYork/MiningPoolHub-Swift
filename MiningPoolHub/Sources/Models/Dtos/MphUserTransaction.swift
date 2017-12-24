@@ -19,7 +19,7 @@ public class MphUserTransaction : Mappable {
     public var txid: String?
     public var height: Int = 0
     public var blockhash: String = ""
-    public var confirmations: Int = 0
+    public var confirmations: Int?
     
     public init() {}
     

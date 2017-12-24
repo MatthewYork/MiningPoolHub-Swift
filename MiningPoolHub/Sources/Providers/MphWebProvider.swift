@@ -16,43 +16,162 @@ public enum HttpMethod: String {
     delete = "DELETE"
 }
 
-public enum MphDomain: String {
-    case root = "",
-    adzcoin = "adzcoin",
-    auroracoinQubit = "auroracoin-qubit",
-    bitcoin = "bitcoin",
-    bitcoinCash = "bitcoin-cash",
-    bitcoinGold = "bitcoin-gold",
-    dash = "dash",
-    digibyteGroestl = "digibyte-groestl",
-    digibyteQubit = "digibyte-qubit",
-    digibyteSkein = "digibyte-skein",
-    electroneum = "electroneum",
-    ethereum = "ethereum",
-    ethereumClassic = "ethereum-classic",
-    expanse = "expanse",
-    feathercoin = "feathercoin",
-    gamecredits = "gamecredits",
-    geocoin = "geocoin",
-    globalboosty = "globalboosty",
-    groestlcoin = "groestlcoin",
-    litecoin = "litecoin",
-    maxcoin = "maxcoin",
-    monacoin = "monacoin",
-    monero = "monero",
-    musicoin = "musicoin",
-    myriadcoinGroestl = "myriadcoin-groestl",
-    myriadcoinSkein = "myriadcoin-skein",
-    myriadcoinYescrypt = "myriadcoin-yescrypt",
-    sexcoin = "sexcoin",
-    siacoin = "siacoin",
-    startcoin = "startcoin",
-    vergeScrypt = "verge-scrypt",
-    vertcoin = "vertcoin",
-    zcash = "zcash",
-    zclassic = "zclassic",
-    zcoin = "zcoin",
-    zencash = "zencash"
+public enum MphDomain: Int {
+    case root,
+    adzcoin,
+    auroracoinQubit,
+    bitcoin,
+    bitcoinCash,
+    bitcoinGold,
+    dash,
+    digibyteGroestl,
+    digibyteQubit,
+    digibyteSkein,
+    electroneum,
+    ethereum,
+    ethereumClassic,
+    expanse,
+    feathercoin,
+    gamecredits,
+    geocoin,
+    globalboosty,
+    groestlcoin,
+    litecoin,
+    maxcoin,
+    monacoin,
+    monero,
+    musicoin,
+    myriadcoinGroestl,
+    myriadcoinSkein,
+    myriadcoinYescrypt,
+    sexcoin,
+    siacoin,
+    startcoin,
+    vergeScrypt,
+    vertcoin,
+    zcash,
+    zclassic,
+    zcoin,
+    zencash
+    
+    public func description() -> String {
+        switch self {
+            case .root: return ""
+            case .adzcoin: return "adzcoin"
+            case .auroracoinQubit: return "auroracoin-qubit"
+            case .bitcoin: return "bitcoin"
+            case .bitcoinCash: return "bitcoin-cash"
+            case .bitcoinGold: return "bitcoin-gold"
+            case .dash: return "dash"
+            case .digibyteGroestl: return "digibyte-groestl"
+            case .digibyteQubit: return "digibyte-qubit"
+            case .digibyteSkein: return "digibyte-skein"
+            case .electroneum: return "electroneum"
+            case .ethereum: return "ethereum"
+            case .ethereumClassic: return "ethereum-classic"
+            case .expanse: return "expanse"
+            case .feathercoin: return "feathercoin"
+            case .gamecredits: return "gamecredits"
+            case . geocoin: return "geocoin"
+            case .globalboosty: return "globalboosty"
+            case .groestlcoin: return "groestlcoin"
+            case .litecoin: return "litecoin"
+            case .maxcoin: return "maxcoin"
+            case .monacoin: return "monacoin"
+            case .monero: return "monero"
+            case .musicoin: return "musicoin"
+            case .myriadcoinGroestl: return "myriadcoin-groestl"
+            case .myriadcoinSkein: return "myriadcoin-skein"
+            case .myriadcoinYescrypt: return "myriadcoin-yescrypt"
+            case .sexcoin: return "sexcoin"
+            case .siacoin: return "siacoin"
+            case .startcoin: return "startcoin"
+            case .vergeScrypt: return "verge-scrypt"
+            case .vertcoin: return "vertcoin"
+            case .zcash: return "zcash"
+            case .zclassic: return "zclassic"
+            case .zcoin: return "zcoin"
+            case .zencash: return "zencash"
+        }
+    }
+    
+    public init?(string: String) {
+        switch string {
+        case "":
+            self = .root
+        case "adzcoin" :
+            self = .adzcoin
+        case "auroracoin-qubit":
+            self = .auroracoinQubit
+        case "bitcoin":
+            self = .bitcoin
+        case "bitcoin-cash":
+            self = .bitcoinCash
+        case "bitcoin-gold":
+            self = .bitcoinGold
+        case "dash":
+            self = .dash
+        case "digibyte-groestl":
+            self = .digibyteGroestl
+        case "digibyte-qubit":
+            self = .digibyteQubit
+        case "digibyte-skein":
+            self = .digibyteSkein
+        case "electroneum":
+            self = .electroneum
+        case "ethereum":
+            self = .ethereum
+        case "ethereum-classic":
+            self = .ethereumClassic
+        case "expanse":
+            self = .expanse
+        case "feathercoin":
+            self = .feathercoin
+        case "gamecredits":
+            self = .gamecredits
+        case "geocoin":
+            self = .geocoin
+        case "globalboosty":
+            self = .globalboosty
+        case "groestlcoin":
+            self = .groestlcoin
+        case "litecoin":
+            self = .litecoin
+        case "maxcoin":
+            self = .maxcoin
+        case "monacoin":
+            self = .monacoin
+        case "monero":
+            self = .monero
+        case "musicoin":
+            self = .musicoin
+        case "myriadcoin-groestl":
+            self = .myriadcoinGroestl
+        case "myriadcoin-skein":
+            self = .myriadcoinSkein
+        case "myriadcoin-yescrypt":
+            self = .myriadcoinYescrypt
+        case "sexcoin":
+            self = .sexcoin
+        case "siacoin":
+            self = .siacoin
+        case "startcoin":
+            self = .startcoin
+        case "verge-scrypt":
+            self = .vergeScrypt
+        case "vertcoin":
+            self = .vertcoin
+        case "zcash":
+            self = .zcash
+        case "zclassic":
+            self = .zclassic
+        case "zcoin":
+            self = .zcoin
+        case "zencash":
+            self = .zencash
+        default: return nil
+        }
+    }
 }
 
 public enum MphsCurrency: Int {
@@ -389,7 +508,7 @@ extension MphWebProvider {
     }
     
     fileprivate func requestUrl(for action: String) -> String {
-        let domain = (customDomain ?? mphDomain.rawValue)
+        let domain = (customDomain ?? mphDomain.description())
         let domainPrefix = domain != "" ? domain+"." : domain
         return "https://\(domainPrefix)\(baseAddress)\(action)"+"&api_key="+configuration.apiKey
     }

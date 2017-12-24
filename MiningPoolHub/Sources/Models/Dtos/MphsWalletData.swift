@@ -31,6 +31,7 @@ public class MphsWalletData: Mappable {
     public var payout_fee: Double = 0.0
     public var payout_percent: Double = 0.0
     public var payout_fee_percent: Double = 0.0
+    public var earning_history: [MphRecentCredit] = []
     
     public init() {}
     
@@ -57,6 +58,7 @@ public class MphsWalletData: Mappable {
         payout_fee <- map["payout_fee"]
         payout_percent <- map["payout_percent"]
         payout_fee_percent <- map["payout_fee_percent"]
+        earning_history <- map["earning_history"]
     }
     
     public func mapping(map: Map) {

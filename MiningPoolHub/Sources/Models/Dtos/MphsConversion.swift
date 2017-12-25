@@ -36,4 +36,16 @@ public class MphsConversion : Mappable {
         eth <- map["ETH"]
         xmr <- map["XMR"]
     }
+    
+    public func conversion(for currency: MphsCurrency) -> Double? {
+        switch currency {
+        case .usd: return usd
+        case .eur: return eur
+        case .gbp: return gbp
+        case .btc: return btc
+        case .ltc: return ltc
+        case .eth: return eth
+        case .xmr: return xmr
+        }
+    }
 }

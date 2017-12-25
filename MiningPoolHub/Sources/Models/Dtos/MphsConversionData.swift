@@ -80,6 +80,47 @@ public class MphsConversionData: Mappable {
         xzc <- map["XZC"]
         zen <- map["ZEN"]
     }
+    
+    public func conversion(for domain: MphDomain) -> MphsConversion {
+        switch domain {
+        case .root: return btc
+        case .adzcoin: return adz
+        case .auroracoinQubit: return aur
+        case .bitcoin: return btc
+        case .bitcoinCash: return bch
+        case .bitcoinGold: return btg
+        case .dash: return dash
+        case .digibyteGroestl: return dgb
+        case .digibyteQubit: return dgb
+        case .digibyteSkein: return dgb
+        case .electroneum: return etn
+        case .ethereum: return eth
+        case .ethereumClassic: return etc
+        case .expanse: return exp
+        case .feathercoin: return ftc
+        case .gamecredits: return game
+        case . geocoin: return geo
+        case .globalboosty: return bsty
+        case .groestlcoin: return grs
+        case .litecoin: return ltc
+        case .maxcoin: return max
+        case .monacoin: return mona
+        case .monero: return xmr
+        case .musicoin: return music
+        case .myriadcoinGroestl: return xmy
+        case .myriadcoinSkein: return xmy
+        case .myriadcoinYescrypt: return xmy
+        case .sexcoin: return sxc
+        case .siacoin: return sc
+        case .startcoin: return start
+        case .vergeScrypt: return xvg
+        case .vertcoin: return vtc
+        case .zcash: return zec
+        case .zclassic: return zcl
+        case .zcoin: return xzc
+        case .zencash: return zen
+        }
+    }
 }
 
 

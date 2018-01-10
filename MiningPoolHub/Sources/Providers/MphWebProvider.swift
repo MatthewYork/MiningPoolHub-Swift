@@ -17,7 +17,7 @@ public enum HttpMethod: String {
 }
 
 public enum MphDomain: Int {
-    case root,
+    case none,
     adzcoin,
     auroracoinQubit,
     bitcoin,
@@ -56,7 +56,7 @@ public enum MphDomain: Int {
     
     public func description() -> String {
         switch self {
-            case .root: return ""
+            case .none: return ""
             case .adzcoin: return "adzcoin"
             case .auroracoinQubit: return "auroracoin-qubit"
             case .bitcoin: return "bitcoin"
@@ -98,7 +98,7 @@ public enum MphDomain: Int {
     public init?(string: String) {
         switch string {
         case "":
-            self = .root
+            self = .none
         case "adzcoin" :
             self = .adzcoin
         case "auroracoin-qubit":
@@ -216,7 +216,7 @@ public class MphWebProvider {
     let urlSession: URLSession = URLSession(configuration:URLSessionConfiguration.default)
     let baseAddress: String = "miningpoolhub.com/index.php?page=api&"
     var configuration: MphConfiguration
-    public var mphDomain: MphDomain = MphDomain.root
+    public var mphDomain: MphDomain = MphDomain.none
     var customDomain: String?
     
     //MARK: - Init

@@ -10,75 +10,75 @@
 		0B79B147349A9787A73B9405 /* Pods_MiningPoolHubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD589A5DE2B1704F907E37F /* Pods_MiningPoolHubDemo.framework */; };
 		385A698AB188FF3680645C5D /* Pods_MiningPoolHubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC2EBE8601EE0D572084325 /* Pods_MiningPoolHubDemoUITests.framework */; };
 		EE6322EE03639A0AC7A9DF5E /* Pods_MiningPoolHubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E712152C2F48875C4B38EB8C /* Pods_MiningPoolHubDemoTests.framework */; };
-		F00D67CD1FE8B4B7003C80C2 /* MphProviderOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67C51FE8B4B6003C80C2 /* MphProviderOperationProtocol.swift */; };
-		F00D67CE1FE8B4B7003C80C2 /* MphCoinProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */; };
-		F00D67CF1FE8B4B7003C80C2 /* MphListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */; };
-		F00D67D01FE8B4B7003C80C2 /* MphWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67CA1FE8B4B6003C80C2 /* MphWebProvider.swift */; };
-		F00D67D11FE8B4B7003C80C2 /* MphProviderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67CC1FE8B4B6003C80C2 /* MphProviderExtensions.swift */; };
-		F00D67D31FE8B595003C80C2 /* MphConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D21FE8B595003C80C2 /* MphConfiguration.swift */; };
-		F00D67D71FE8B5CB003C80C2 /* MphDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */; };
-		F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */; };
-		F00D67DB1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */; };
-		F00D67DD1FE8CEFC003C80C2 /* MphBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DC1FE8CEFC003C80C2 /* MphBalance.swift */; };
-		F00D67DF1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67DE1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift */; };
-		F00D67E31FE8D332003C80C2 /* MphBlockCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E21FE8D332003C80C2 /* MphBlockCountResponse.swift */; };
-		F00D67E71FE8D387003C80C2 /* MphVersionRuntimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E61FE8D387003C80C2 /* MphVersionRuntimeResponse.swift */; };
-		F00D67E91FE95991003C80C2 /* MphBlocksFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67E81FE95991003C80C2 /* MphBlocksFoundResponse.swift */; };
-		F00D67EB1FE959C1003C80C2 /* MphListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67EA1FE959C1003C80C2 /* MphListData.swift */; };
-		F00D67ED1FE95AA2003C80C2 /* MphBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67EC1FE95AA2003C80C2 /* MphBlock.swift */; };
-		F00D67EF1FE95E1E003C80C2 /* MphBlockStatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67EE1FE95E1E003C80C2 /* MphBlockStatsResponse.swift */; };
-		F00D67F31FE95E8E003C80C2 /* MphBlockStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67F21FE95E8E003C80C2 /* MphBlockStat.swift */; };
-		F00D67F71FE9637D003C80C2 /* MphCurrentWorkersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67F61FE9637D003C80C2 /* MphCurrentWorkersResponse.swift */; };
-		F00D67FB1FE9659D003C80C2 /* MphDashboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D67FA1FE9659D003C80C2 /* MphDashboardResponse.swift */; };
-		F00D680B1FE96C3A003C80C2 /* MphNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68011FE96C38003C80C2 /* MphNetwork.swift */; };
-		F00D680C1FE96C3A003C80C2 /* MphRawDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68021FE96C38003C80C2 /* MphRawDashboard.swift */; };
-		F00D680D1FE96C3A003C80C2 /* MphShares.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68031FE96C39003C80C2 /* MphShares.swift */; };
-		F00D680E1FE96C3A003C80C2 /* MphSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68041FE96C39003C80C2 /* MphSystem.swift */; };
-		F00D680F1FE96C3A003C80C2 /* MphDashboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68051FE96C39003C80C2 /* MphDashboardData.swift */; };
-		F00D68101FE96C3A003C80C2 /* MphCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68061FE96C39003C80C2 /* MphCredit.swift */; };
-		F00D68111FE96C3A003C80C2 /* MphPoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68071FE96C39003C80C2 /* MphPoolInfo.swift */; };
-		F00D68121FE96C3A003C80C2 /* MphEstimates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68081FE96C39003C80C2 /* MphEstimates.swift */; };
-		F00D68131FE96C3A003C80C2 /* MphPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68091FE96C3A003C80C2 /* MphPool.swift */; };
-		F00D68151FE96C62003C80C2 /* MphPersonalDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68141FE96C62003C80C2 /* MphPersonalDashboard.swift */; };
-		F00D68171FE96D00003C80C2 /* MphRecentCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68161FE96D00003C80C2 /* MphRecentCredit.swift */; };
-		F00D68191FE97050003C80C2 /* MphDashboardBalanceForAutoExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68181FE97050003C80C2 /* MphDashboardBalanceForAutoExchange.swift */; };
-		F00D681B1FE97453003C80C2 /* MphRawHashrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D681A1FE97453003C80C2 /* MphRawHashrate.swift */; };
-		F00D681D1FE97AD3003C80C2 /* MphDifficultyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D681C1FE97AD3003C80C2 /* MphDifficultyResponse.swift */; };
-		F00D68211FE97D81003C80C2 /* MphEstimatedTimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68201FE97D81003C80C2 /* MphEstimatedTimeResponse.swift */; };
-		F00D68251FE97F0F003C80C2 /* MphObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68241FE97F0F003C80C2 /* MphObjectData.swift */; };
-		F00D68271FE98062003C80C2 /* MphIntegerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68261FE98062003C80C2 /* MphIntegerData.swift */; };
-		F00D68291FE9806E003C80C2 /* MphDoubleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68281FE9806E003C80C2 /* MphDoubleData.swift */; };
-		F00D682B1FE980FA003C80C2 /* MphPoolHashRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D682A1FE980FA003C80C2 /* MphPoolHashRateResponse.swift */; };
-		F00D682D1FE99C8F003C80C2 /* MphPoolInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D682C1FE99C8F003C80C2 /* MphPoolInfoResponse.swift */; };
-		F00D682F1FE99CA8003C80C2 /* MphPoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D682E1FE99CA8003C80C2 /* MphPoolDetails.swift */; };
-		F00D68311FE99FA0003C80C2 /* MphPoolShareRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68301FE99FA0003C80C2 /* MphPoolShareRateResponse.swift */; };
-		F00D68331FE9A066003C80C2 /* MphPoolStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68321FE9A066003C80C2 /* MphPoolStatusResponse.swift */; };
-		F00D68351FE9A06E003C80C2 /* MphPoolStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68341FE9A06E003C80C2 /* MphPoolStatus.swift */; };
-		F00D68371FE9A266003C80C2 /* MphTimeSinceLastBlockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68361FE9A266003C80C2 /* MphTimeSinceLastBlockResponse.swift */; };
-		F00D68391FE9A5C0003C80C2 /* MphTopContributorsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68381FE9A5C0003C80C2 /* MphTopContributorsResponse.swift */; };
-		F00D683B1FE9A5DA003C80C2 /* MphTopContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D683A1FE9A5DA003C80C2 /* MphTopContributor.swift */; };
-		F00D683D1FE9A5F6003C80C2 /* MphTopContributorHashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D683C1FE9A5F6003C80C2 /* MphTopContributorHashes.swift */; };
-		F00D683F1FE9A852003C80C2 /* MphUserBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D683E1FE9A852003C80C2 /* MphUserBalanceResponse.swift */; };
-		F00D68411FE9A871003C80C2 /* MphUserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68401FE9A871003C80C2 /* MphUserBalance.swift */; };
-		F00D68431FE9AB9D003C80C2 /* MphUserHashRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68421FE9AB9D003C80C2 /* MphUserHashRateResponse.swift */; };
-		F00D68451FE9ACC3003C80C2 /* MphUserShareRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68441FE9ACC3003C80C2 /* MphUserShareRateResponse.swift */; };
-		F00D68471FE9AD85003C80C2 /* MphUserStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68461FE9AD85003C80C2 /* MphUserStatusResponse.swift */; };
-		F00D68491FE9ADA0003C80C2 /* MphUserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68481FE9ADA0003C80C2 /* MphUserStatus.swift */; };
-		F00D684B1FE9AE04003C80C2 /* MphUserStatusShares.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D684A1FE9AE04003C80C2 /* MphUserStatusShares.swift */; };
-		F00D684D1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D684C1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift */; };
-		F00D684F1FE9B001003C80C2 /* MphUserTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D684E1FE9B001003C80C2 /* MphUserTransactions.swift */; };
-		F00D68511FE9B024003C80C2 /* MphUserTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68501FE9B023003C80C2 /* MphUserTransaction.swift */; };
-		F00D68531FE9B247003C80C2 /* MphUserWorkersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68521FE9B247003C80C2 /* MphUserWorkersResponse.swift */; };
-		F00D68551FE9B258003C80C2 /* MphWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68541FE9B258003C80C2 /* MphWorker.swift */; };
-		F00D68571FE9B349003C80C2 /* MphPublicPoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68561FE9B349003C80C2 /* MphPublicPoolResponse.swift */; };
-		F00D687D1FEAC242003C80C2 /* MphsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D687C1FEAC242003C80C2 /* MphsResponse.swift */; };
-		F00D687F1FEAC305003C80C2 /* MphsConversionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D687E1FEAC305003C80C2 /* MphsConversionData.swift */; };
-		F00D68811FEAC313003C80C2 /* MphsWalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68801FEAC313003C80C2 /* MphsWalletData.swift */; };
-		F00D68831FEAC322003C80C2 /* MphsWorkerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68821FEAC322003C80C2 /* MphsWorkerData.swift */; };
-		F00D68851FEAC33A003C80C2 /* MphsTotalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68841FEAC33A003C80C2 /* MphsTotalsData.swift */; };
-		F00D68871FEAC345003C80C2 /* MphsEstimatesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68861FEAC345003C80C2 /* MphsEstimatesData.swift */; };
-		F00D68891FEAC35F003C80C2 /* MphsThresholds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D68881FEAC35F003C80C2 /* MphsThresholds.swift */; };
-		F00D688B1FEAC51D003C80C2 /* MphsConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D688A1FEAC51D003C80C2 /* MphsConversion.swift */; };
+		F0B1C9B2200655BD0054488A /* MphProviderOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C968200655BD0054488A /* MphProviderOperationProtocol.swift */; };
+		F0B1C9B3200655BD0054488A /* MphConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C969200655BD0054488A /* MphConfiguration.swift */; };
+		F0B1C9B4200655BD0054488A /* MphProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C96A200655BD0054488A /* MphProvider.swift */; };
+		F0B1C9B5200655BD0054488A /* MphProviderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C96C200655BD0054488A /* MphProviderExtensions.swift */; };
+		F0B1C9B6200655BD0054488A /* MphDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C96F200655BD0054488A /* MphDefaultConfiguration.swift */; };
+		F0B1C9B7200655BD0054488A /* MphUserTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C971200655BD0054488A /* MphUserTransactions.swift */; };
+		F0B1C9B8200655BD0054488A /* MphObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C972200655BD0054488A /* MphObjectData.swift */; };
+		F0B1C9B9200655BD0054488A /* MphVersionRuntimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C973200655BD0054488A /* MphVersionRuntimeResponse.swift */; };
+		F0B1C9BA200655BD0054488A /* MphCurrentWorkersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C974200655BD0054488A /* MphCurrentWorkersResponse.swift */; };
+		F0B1C9BB200655BD0054488A /* MphListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C975200655BD0054488A /* MphListData.swift */; };
+		F0B1C9BC200655BD0054488A /* MphUserBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C976200655BD0054488A /* MphUserBalanceResponse.swift */; };
+		F0B1C9BD200655BD0054488A /* MphTopContributorsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C977200655BD0054488A /* MphTopContributorsResponse.swift */; };
+		F0B1C9BE200655BD0054488A /* MphDoubleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C978200655BD0054488A /* MphDoubleData.swift */; };
+		F0B1C9BF200655BD0054488A /* MphsWalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C979200655BD0054488A /* MphsWalletData.swift */; };
+		F0B1C9C0200655BD0054488A /* MphBlocksFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C97A200655BD0054488A /* MphBlocksFoundResponse.swift */; };
+		F0B1C9C1200655BD0054488A /* MphEstimates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C97B200655BD0054488A /* MphEstimates.swift */; };
+		F0B1C9C2200655BD0054488A /* MphPoolStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C97C200655BD0054488A /* MphPoolStatus.swift */; };
+		F0B1C9C3200655BD0054488A /* MphDifficultyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C97D200655BD0054488A /* MphDifficultyResponse.swift */; };
+		F0B1C9C4200655BD0054488A /* MphPoolStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C97E200655BD0054488A /* MphPoolStatusResponse.swift */; };
+		F0B1C9C5200655BD0054488A /* MphPoolInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C97F200655BD0054488A /* MphPoolInfoResponse.swift */; };
+		F0B1C9C6200655BD0054488A /* MphTimeSinceLastBlockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C980200655BD0054488A /* MphTimeSinceLastBlockResponse.swift */; };
+		F0B1C9C7200655BD0054488A /* MphUserTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C981200655BD0054488A /* MphUserTransaction.swift */; };
+		F0B1C9C8200655BD0054488A /* MphCoinProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C982200655BD0054488A /* MphCoinProfitStatistics.swift */; };
+		F0B1C9C9200655BD0054488A /* MphsTotalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C983200655BD0054488A /* MphsTotalsData.swift */; };
+		F0B1C9CA200655BD0054488A /* MphTopContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C984200655BD0054488A /* MphTopContributor.swift */; };
+		F0B1C9CB200655BD0054488A /* MphsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C985200655BD0054488A /* MphsResponse.swift */; };
+		F0B1C9CC200655BD0054488A /* MphRawDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C986200655BD0054488A /* MphRawDashboard.swift */; };
+		F0B1C9CD200655BD0054488A /* MphRecentCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C987200655BD0054488A /* MphRecentCredit.swift */; };
+		F0B1C9CE200655BD0054488A /* MphSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C988200655BD0054488A /* MphSystem.swift */; };
+		F0B1C9CF200655BD0054488A /* MphUserTransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C989200655BD0054488A /* MphUserTransactionsResponse.swift */; };
+		F0B1C9D0200655BD0054488A /* MphUserWorkersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C98A200655BD0054488A /* MphUserWorkersResponse.swift */; };
+		F0B1C9D1200655BD0054488A /* MphNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C98B200655BD0054488A /* MphNetwork.swift */; };
+		F0B1C9D2200655BD0054488A /* MphTopContributorHashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C98C200655BD0054488A /* MphTopContributorHashes.swift */; };
+		F0B1C9D3200655BD0054488A /* MphPublicPoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C98D200655BD0054488A /* MphPublicPoolResponse.swift */; };
+		F0B1C9D4200655BD0054488A /* MphBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C98E200655BD0054488A /* MphBalance.swift */; };
+		F0B1C9D5200655BD0054488A /* MphWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C98F200655BD0054488A /* MphWorker.swift */; };
+		F0B1C9D6200655BD0054488A /* MphShares.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C990200655BD0054488A /* MphShares.swift */; };
+		F0B1C9D7200655BD0054488A /* MphsWorkerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C991200655BD0054488A /* MphsWorkerData.swift */; };
+		F0B1C9D8200655BD0054488A /* MphUserStatusShares.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C992200655BD0054488A /* MphUserStatusShares.swift */; };
+		F0B1C9D9200655BD0054488A /* MphPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C993200655BD0054488A /* MphPool.swift */; };
+		F0B1C9DA200655BD0054488A /* MphBlockStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C994200655BD0054488A /* MphBlockStat.swift */; };
+		F0B1C9DB200655BD0054488A /* MphsThresholds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C995200655BD0054488A /* MphsThresholds.swift */; };
+		F0B1C9DC200655BD0054488A /* MphPoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C996200655BD0054488A /* MphPoolInfo.swift */; };
+		F0B1C9DD200655BD0054488A /* MphPoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C997200655BD0054488A /* MphPoolDetails.swift */; };
+		F0B1C9DE200655BD0054488A /* MphAutoSwitchingProfitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C998200655BD0054488A /* MphAutoSwitchingProfitStatistics.swift */; };
+		F0B1C9DF200655BD0054488A /* MphUserBalancesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C999200655BD0054488A /* MphUserBalancesResponse.swift */; };
+		F0B1C9E0200655BD0054488A /* MphUserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C99A200655BD0054488A /* MphUserBalance.swift */; };
+		F0B1C9E1200655BD0054488A /* MphUserShareRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C99B200655BD0054488A /* MphUserShareRateResponse.swift */; };
+		F0B1C9E2200655BD0054488A /* MphUserHashRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C99C200655BD0054488A /* MphUserHashRateResponse.swift */; };
+		F0B1C9E3200655BD0054488A /* MphRawHashrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C99D200655BD0054488A /* MphRawHashrate.swift */; };
+		F0B1C9E4200655BD0054488A /* MphBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C99E200655BD0054488A /* MphBlock.swift */; };
+		F0B1C9E5200655BD0054488A /* MphDashboardBalanceForAutoExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C99F200655BD0054488A /* MphDashboardBalanceForAutoExchange.swift */; };
+		F0B1C9E6200655BD0054488A /* MphsConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A0200655BD0054488A /* MphsConversion.swift */; };
+		F0B1C9E7200655BD0054488A /* MphIntegerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A1200655BD0054488A /* MphIntegerData.swift */; };
+		F0B1C9E8200655BD0054488A /* MphBlockCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A2200655BD0054488A /* MphBlockCountResponse.swift */; };
+		F0B1C9E9200655BD0054488A /* MphPoolShareRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A3200655BD0054488A /* MphPoolShareRateResponse.swift */; };
+		F0B1C9EA200655BD0054488A /* MphBlockStatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A4200655BD0054488A /* MphBlockStatsResponse.swift */; };
+		F0B1C9EB200655BD0054488A /* MphDashboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A5200655BD0054488A /* MphDashboardData.swift */; };
+		F0B1C9EC200655BD0054488A /* MphUserStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A6200655BD0054488A /* MphUserStatusResponse.swift */; };
+		F0B1C9ED200655BD0054488A /* MphUserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A7200655BD0054488A /* MphUserStatus.swift */; };
+		F0B1C9EE200655BD0054488A /* MphEstimatedTimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A8200655BD0054488A /* MphEstimatedTimeResponse.swift */; };
+		F0B1C9EF200655BD0054488A /* MphListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9A9200655BD0054488A /* MphListResponse.swift */; };
+		F0B1C9F0200655BD0054488A /* MphsEstimatesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9AA200655BD0054488A /* MphsEstimatesData.swift */; };
+		F0B1C9F1200655BD0054488A /* MphsConversionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9AB200655BD0054488A /* MphsConversionData.swift */; };
+		F0B1C9F2200655BD0054488A /* MphCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9AC200655BD0054488A /* MphCredit.swift */; };
+		F0B1C9F3200655BD0054488A /* MphPersonalDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9AD200655BD0054488A /* MphPersonalDashboard.swift */; };
+		F0B1C9F4200655BD0054488A /* MphDashboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9AE200655BD0054488A /* MphDashboardResponse.swift */; };
+		F0B1C9F5200655BD0054488A /* MphPoolHashRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9AF200655BD0054488A /* MphPoolHashRateResponse.swift */; };
+		F0B1C9F6200655BD0054488A /* MphWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1C9B1200655BD0054488A /* MphWebProvider.swift */; };
 		F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */; };
 		F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1F66D1FE8B12000C346B4 /* ViewController.swift */; };
 		F0D1F6711FE8B12000C346B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D1F66F1FE8B12000C346B4 /* Main.storyboard */; };
@@ -113,75 +113,75 @@
 		5612B7B1FFC3A82D2A301195 /* Pods-MiningPoolHubDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemoUITests/Pods-MiningPoolHubDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFBCBB6EC14A20A5C99F878 /* Pods-MiningPoolHubDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiningPoolHubDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiningPoolHubDemoUITests/Pods-MiningPoolHubDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E712152C2F48875C4B38EB8C /* Pods_MiningPoolHubDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiningPoolHubDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F00D67C51FE8B4B6003C80C2 /* MphProviderOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProviderOperationProtocol.swift; sourceTree = "<group>"; };
-		F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphCoinProfitStatistics.swift; sourceTree = "<group>"; };
-		F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphListResponse.swift; sourceTree = "<group>"; };
-		F00D67CA1FE8B4B6003C80C2 /* MphWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphWebProvider.swift; sourceTree = "<group>"; };
-		F00D67CC1FE8B4B6003C80C2 /* MphProviderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProviderExtensions.swift; sourceTree = "<group>"; };
-		F00D67D21FE8B595003C80C2 /* MphConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphConfiguration.swift; sourceTree = "<group>"; };
-		F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphDefaultConfiguration.swift; sourceTree = "<group>"; };
-		F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphProvider.swift; sourceTree = "<group>"; };
-		F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphAutoSwitchingProfitStatistics.swift; sourceTree = "<group>"; };
-		F00D67DC1FE8CEFC003C80C2 /* MphBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBalance.swift; sourceTree = "<group>"; };
-		F00D67DE1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserBalancesResponse.swift; sourceTree = "<group>"; };
-		F00D67E21FE8D332003C80C2 /* MphBlockCountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlockCountResponse.swift; sourceTree = "<group>"; };
-		F00D67E61FE8D387003C80C2 /* MphVersionRuntimeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphVersionRuntimeResponse.swift; sourceTree = "<group>"; };
-		F00D67E81FE95991003C80C2 /* MphBlocksFoundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlocksFoundResponse.swift; sourceTree = "<group>"; };
-		F00D67EA1FE959C1003C80C2 /* MphListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphListData.swift; sourceTree = "<group>"; };
-		F00D67EC1FE95AA2003C80C2 /* MphBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlock.swift; sourceTree = "<group>"; };
-		F00D67EE1FE95E1E003C80C2 /* MphBlockStatsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlockStatsResponse.swift; sourceTree = "<group>"; };
-		F00D67F21FE95E8E003C80C2 /* MphBlockStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphBlockStat.swift; sourceTree = "<group>"; };
-		F00D67F61FE9637D003C80C2 /* MphCurrentWorkersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphCurrentWorkersResponse.swift; sourceTree = "<group>"; };
-		F00D67FA1FE9659D003C80C2 /* MphDashboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphDashboardResponse.swift; sourceTree = "<group>"; };
-		F00D68011FE96C38003C80C2 /* MphNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphNetwork.swift; sourceTree = "<group>"; };
-		F00D68021FE96C38003C80C2 /* MphRawDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphRawDashboard.swift; sourceTree = "<group>"; };
-		F00D68031FE96C39003C80C2 /* MphShares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphShares.swift; sourceTree = "<group>"; };
-		F00D68041FE96C39003C80C2 /* MphSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphSystem.swift; sourceTree = "<group>"; };
-		F00D68051FE96C39003C80C2 /* MphDashboardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDashboardData.swift; sourceTree = "<group>"; };
-		F00D68061FE96C39003C80C2 /* MphCredit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphCredit.swift; sourceTree = "<group>"; };
-		F00D68071FE96C39003C80C2 /* MphPoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolInfo.swift; sourceTree = "<group>"; };
-		F00D68081FE96C39003C80C2 /* MphEstimates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphEstimates.swift; sourceTree = "<group>"; };
-		F00D68091FE96C3A003C80C2 /* MphPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPool.swift; sourceTree = "<group>"; };
-		F00D68141FE96C62003C80C2 /* MphPersonalDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPersonalDashboard.swift; sourceTree = "<group>"; };
-		F00D68161FE96D00003C80C2 /* MphRecentCredit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphRecentCredit.swift; sourceTree = "<group>"; };
-		F00D68181FE97050003C80C2 /* MphDashboardBalanceForAutoExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDashboardBalanceForAutoExchange.swift; sourceTree = "<group>"; };
-		F00D681A1FE97453003C80C2 /* MphRawHashrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphRawHashrate.swift; sourceTree = "<group>"; };
-		F00D681C1FE97AD3003C80C2 /* MphDifficultyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphDifficultyResponse.swift; sourceTree = "<group>"; };
-		F00D68201FE97D81003C80C2 /* MphEstimatedTimeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphEstimatedTimeResponse.swift; sourceTree = "<group>"; };
-		F00D68241FE97F0F003C80C2 /* MphObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphObjectData.swift; sourceTree = "<group>"; };
-		F00D68261FE98062003C80C2 /* MphIntegerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphIntegerData.swift; sourceTree = "<group>"; };
-		F00D68281FE9806E003C80C2 /* MphDoubleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphDoubleData.swift; sourceTree = "<group>"; };
-		F00D682A1FE980FA003C80C2 /* MphPoolHashRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPoolHashRateResponse.swift; sourceTree = "<group>"; };
-		F00D682C1FE99C8F003C80C2 /* MphPoolInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPoolInfoResponse.swift; sourceTree = "<group>"; };
-		F00D682E1FE99CA8003C80C2 /* MphPoolDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPoolDetails.swift; sourceTree = "<group>"; };
-		F00D68301FE99FA0003C80C2 /* MphPoolShareRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPoolShareRateResponse.swift; sourceTree = "<group>"; };
-		F00D68321FE9A066003C80C2 /* MphPoolStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPoolStatusResponse.swift; sourceTree = "<group>"; };
-		F00D68341FE9A06E003C80C2 /* MphPoolStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPoolStatus.swift; sourceTree = "<group>"; };
-		F00D68361FE9A266003C80C2 /* MphTimeSinceLastBlockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphTimeSinceLastBlockResponse.swift; sourceTree = "<group>"; };
-		F00D68381FE9A5C0003C80C2 /* MphTopContributorsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphTopContributorsResponse.swift; sourceTree = "<group>"; };
-		F00D683A1FE9A5DA003C80C2 /* MphTopContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphTopContributor.swift; sourceTree = "<group>"; };
-		F00D683C1FE9A5F6003C80C2 /* MphTopContributorHashes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphTopContributorHashes.swift; sourceTree = "<group>"; };
-		F00D683E1FE9A852003C80C2 /* MphUserBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserBalanceResponse.swift; sourceTree = "<group>"; };
-		F00D68401FE9A871003C80C2 /* MphUserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserBalance.swift; sourceTree = "<group>"; };
-		F00D68421FE9AB9D003C80C2 /* MphUserHashRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserHashRateResponse.swift; sourceTree = "<group>"; };
-		F00D68441FE9ACC3003C80C2 /* MphUserShareRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserShareRateResponse.swift; sourceTree = "<group>"; };
-		F00D68461FE9AD85003C80C2 /* MphUserStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserStatusResponse.swift; sourceTree = "<group>"; };
-		F00D68481FE9ADA0003C80C2 /* MphUserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserStatus.swift; sourceTree = "<group>"; };
-		F00D684A1FE9AE04003C80C2 /* MphUserStatusShares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserStatusShares.swift; sourceTree = "<group>"; };
-		F00D684C1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserTransactionsResponse.swift; sourceTree = "<group>"; };
-		F00D684E1FE9B001003C80C2 /* MphUserTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserTransactions.swift; sourceTree = "<group>"; };
-		F00D68501FE9B023003C80C2 /* MphUserTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserTransaction.swift; sourceTree = "<group>"; };
-		F00D68521FE9B247003C80C2 /* MphUserWorkersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphUserWorkersResponse.swift; sourceTree = "<group>"; };
-		F00D68541FE9B258003C80C2 /* MphWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphWorker.swift; sourceTree = "<group>"; };
-		F00D68561FE9B349003C80C2 /* MphPublicPoolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphPublicPoolResponse.swift; sourceTree = "<group>"; };
-		F00D687C1FEAC242003C80C2 /* MphsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsResponse.swift; sourceTree = "<group>"; };
-		F00D687E1FEAC305003C80C2 /* MphsConversionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsConversionData.swift; sourceTree = "<group>"; };
-		F00D68801FEAC313003C80C2 /* MphsWalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsWalletData.swift; sourceTree = "<group>"; };
-		F00D68821FEAC322003C80C2 /* MphsWorkerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsWorkerData.swift; sourceTree = "<group>"; };
-		F00D68841FEAC33A003C80C2 /* MphsTotalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsTotalsData.swift; sourceTree = "<group>"; };
-		F00D68861FEAC345003C80C2 /* MphsEstimatesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsEstimatesData.swift; sourceTree = "<group>"; };
-		F00D68881FEAC35F003C80C2 /* MphsThresholds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsThresholds.swift; sourceTree = "<group>"; };
-		F00D688A1FEAC51D003C80C2 /* MphsConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MphsConversion.swift; sourceTree = "<group>"; };
+		F0B1C968200655BD0054488A /* MphProviderOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProviderOperationProtocol.swift; sourceTree = "<group>"; };
+		F0B1C969200655BD0054488A /* MphConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphConfiguration.swift; sourceTree = "<group>"; };
+		F0B1C96A200655BD0054488A /* MphProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProvider.swift; sourceTree = "<group>"; };
+		F0B1C96C200655BD0054488A /* MphProviderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphProviderExtensions.swift; sourceTree = "<group>"; };
+		F0B1C96F200655BD0054488A /* MphDefaultConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDefaultConfiguration.swift; sourceTree = "<group>"; };
+		F0B1C971200655BD0054488A /* MphUserTransactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserTransactions.swift; sourceTree = "<group>"; };
+		F0B1C972200655BD0054488A /* MphObjectData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphObjectData.swift; sourceTree = "<group>"; };
+		F0B1C973200655BD0054488A /* MphVersionRuntimeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphVersionRuntimeResponse.swift; sourceTree = "<group>"; };
+		F0B1C974200655BD0054488A /* MphCurrentWorkersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphCurrentWorkersResponse.swift; sourceTree = "<group>"; };
+		F0B1C975200655BD0054488A /* MphListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphListData.swift; sourceTree = "<group>"; };
+		F0B1C976200655BD0054488A /* MphUserBalanceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserBalanceResponse.swift; sourceTree = "<group>"; };
+		F0B1C977200655BD0054488A /* MphTopContributorsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphTopContributorsResponse.swift; sourceTree = "<group>"; };
+		F0B1C978200655BD0054488A /* MphDoubleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDoubleData.swift; sourceTree = "<group>"; };
+		F0B1C979200655BD0054488A /* MphsWalletData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsWalletData.swift; sourceTree = "<group>"; };
+		F0B1C97A200655BD0054488A /* MphBlocksFoundResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphBlocksFoundResponse.swift; sourceTree = "<group>"; };
+		F0B1C97B200655BD0054488A /* MphEstimates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphEstimates.swift; sourceTree = "<group>"; };
+		F0B1C97C200655BD0054488A /* MphPoolStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolStatus.swift; sourceTree = "<group>"; };
+		F0B1C97D200655BD0054488A /* MphDifficultyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDifficultyResponse.swift; sourceTree = "<group>"; };
+		F0B1C97E200655BD0054488A /* MphPoolStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolStatusResponse.swift; sourceTree = "<group>"; };
+		F0B1C97F200655BD0054488A /* MphPoolInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolInfoResponse.swift; sourceTree = "<group>"; };
+		F0B1C980200655BD0054488A /* MphTimeSinceLastBlockResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphTimeSinceLastBlockResponse.swift; sourceTree = "<group>"; };
+		F0B1C981200655BD0054488A /* MphUserTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserTransaction.swift; sourceTree = "<group>"; };
+		F0B1C982200655BD0054488A /* MphCoinProfitStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphCoinProfitStatistics.swift; sourceTree = "<group>"; };
+		F0B1C983200655BD0054488A /* MphsTotalsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsTotalsData.swift; sourceTree = "<group>"; };
+		F0B1C984200655BD0054488A /* MphTopContributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphTopContributor.swift; sourceTree = "<group>"; };
+		F0B1C985200655BD0054488A /* MphsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsResponse.swift; sourceTree = "<group>"; };
+		F0B1C986200655BD0054488A /* MphRawDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphRawDashboard.swift; sourceTree = "<group>"; };
+		F0B1C987200655BD0054488A /* MphRecentCredit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphRecentCredit.swift; sourceTree = "<group>"; };
+		F0B1C988200655BD0054488A /* MphSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphSystem.swift; sourceTree = "<group>"; };
+		F0B1C989200655BD0054488A /* MphUserTransactionsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserTransactionsResponse.swift; sourceTree = "<group>"; };
+		F0B1C98A200655BD0054488A /* MphUserWorkersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserWorkersResponse.swift; sourceTree = "<group>"; };
+		F0B1C98B200655BD0054488A /* MphNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphNetwork.swift; sourceTree = "<group>"; };
+		F0B1C98C200655BD0054488A /* MphTopContributorHashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphTopContributorHashes.swift; sourceTree = "<group>"; };
+		F0B1C98D200655BD0054488A /* MphPublicPoolResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPublicPoolResponse.swift; sourceTree = "<group>"; };
+		F0B1C98E200655BD0054488A /* MphBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphBalance.swift; sourceTree = "<group>"; };
+		F0B1C98F200655BD0054488A /* MphWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphWorker.swift; sourceTree = "<group>"; };
+		F0B1C990200655BD0054488A /* MphShares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphShares.swift; sourceTree = "<group>"; };
+		F0B1C991200655BD0054488A /* MphsWorkerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsWorkerData.swift; sourceTree = "<group>"; };
+		F0B1C992200655BD0054488A /* MphUserStatusShares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserStatusShares.swift; sourceTree = "<group>"; };
+		F0B1C993200655BD0054488A /* MphPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPool.swift; sourceTree = "<group>"; };
+		F0B1C994200655BD0054488A /* MphBlockStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphBlockStat.swift; sourceTree = "<group>"; };
+		F0B1C995200655BD0054488A /* MphsThresholds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsThresholds.swift; sourceTree = "<group>"; };
+		F0B1C996200655BD0054488A /* MphPoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolInfo.swift; sourceTree = "<group>"; };
+		F0B1C997200655BD0054488A /* MphPoolDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolDetails.swift; sourceTree = "<group>"; };
+		F0B1C998200655BD0054488A /* MphAutoSwitchingProfitStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphAutoSwitchingProfitStatistics.swift; sourceTree = "<group>"; };
+		F0B1C999200655BD0054488A /* MphUserBalancesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserBalancesResponse.swift; sourceTree = "<group>"; };
+		F0B1C99A200655BD0054488A /* MphUserBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserBalance.swift; sourceTree = "<group>"; };
+		F0B1C99B200655BD0054488A /* MphUserShareRateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserShareRateResponse.swift; sourceTree = "<group>"; };
+		F0B1C99C200655BD0054488A /* MphUserHashRateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserHashRateResponse.swift; sourceTree = "<group>"; };
+		F0B1C99D200655BD0054488A /* MphRawHashrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphRawHashrate.swift; sourceTree = "<group>"; };
+		F0B1C99E200655BD0054488A /* MphBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphBlock.swift; sourceTree = "<group>"; };
+		F0B1C99F200655BD0054488A /* MphDashboardBalanceForAutoExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDashboardBalanceForAutoExchange.swift; sourceTree = "<group>"; };
+		F0B1C9A0200655BD0054488A /* MphsConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsConversion.swift; sourceTree = "<group>"; };
+		F0B1C9A1200655BD0054488A /* MphIntegerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphIntegerData.swift; sourceTree = "<group>"; };
+		F0B1C9A2200655BD0054488A /* MphBlockCountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphBlockCountResponse.swift; sourceTree = "<group>"; };
+		F0B1C9A3200655BD0054488A /* MphPoolShareRateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolShareRateResponse.swift; sourceTree = "<group>"; };
+		F0B1C9A4200655BD0054488A /* MphBlockStatsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphBlockStatsResponse.swift; sourceTree = "<group>"; };
+		F0B1C9A5200655BD0054488A /* MphDashboardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDashboardData.swift; sourceTree = "<group>"; };
+		F0B1C9A6200655BD0054488A /* MphUserStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserStatusResponse.swift; sourceTree = "<group>"; };
+		F0B1C9A7200655BD0054488A /* MphUserStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphUserStatus.swift; sourceTree = "<group>"; };
+		F0B1C9A8200655BD0054488A /* MphEstimatedTimeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphEstimatedTimeResponse.swift; sourceTree = "<group>"; };
+		F0B1C9A9200655BD0054488A /* MphListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphListResponse.swift; sourceTree = "<group>"; };
+		F0B1C9AA200655BD0054488A /* MphsEstimatesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsEstimatesData.swift; sourceTree = "<group>"; };
+		F0B1C9AB200655BD0054488A /* MphsConversionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphsConversionData.swift; sourceTree = "<group>"; };
+		F0B1C9AC200655BD0054488A /* MphCredit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphCredit.swift; sourceTree = "<group>"; };
+		F0B1C9AD200655BD0054488A /* MphPersonalDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPersonalDashboard.swift; sourceTree = "<group>"; };
+		F0B1C9AE200655BD0054488A /* MphDashboardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphDashboardResponse.swift; sourceTree = "<group>"; };
+		F0B1C9AF200655BD0054488A /* MphPoolHashRateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphPoolHashRateResponse.swift; sourceTree = "<group>"; };
+		F0B1C9B1200655BD0054488A /* MphWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MphWebProvider.swift; sourceTree = "<group>"; };
 		F0D1F6681FE8B12000C346B4 /* MiningPoolHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiningPoolHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D1F66D1FE8B12000C346B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -250,132 +250,132 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F00D67C31FE8B4A6003C80C2 /* MiningPoolHub */ = {
+		F0B1C966200655B30054488A /* MiningPoolHub */ = {
 			isa = PBXGroup;
 			children = (
-				F00D67CB1FE8B4B6003C80C2 /* Extensions */,
-				F00D67C61FE8B4B6003C80C2 /* Models */,
-				F00D67C41FE8B4B6003C80C2 /* Protocols */,
-				F00D67C91FE8B4B6003C80C2 /* Providers */,
+				F0B1C96B200655BD0054488A /* Extensions */,
+				F0B1C96D200655BD0054488A /* Models */,
+				F0B1C967200655BD0054488A /* Protocols */,
+				F0B1C9B0200655BD0054488A /* Providers */,
 			);
 			path = MiningPoolHub;
 			sourceTree = "<group>";
 		};
-		F00D67C41FE8B4B6003C80C2 /* Protocols */ = {
+		F0B1C967200655BD0054488A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F00D67D21FE8B595003C80C2 /* MphConfiguration.swift */,
-				F00D67D81FE8B6C7003C80C2 /* MphProvider.swift */,
-				F00D67C51FE8B4B6003C80C2 /* MphProviderOperationProtocol.swift */,
+				F0B1C968200655BD0054488A /* MphProviderOperationProtocol.swift */,
+				F0B1C969200655BD0054488A /* MphConfiguration.swift */,
+				F0B1C96A200655BD0054488A /* MphProvider.swift */,
 			);
 			name = Protocols;
 			path = ../../../MiningPoolHub/Sources/Protocols;
 			sourceTree = "<group>";
 		};
-		F00D67C61FE8B4B6003C80C2 /* Models */ = {
+		F0B1C96B200655BD0054488A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F00D67D51FE8B5AB003C80C2 /* Dtos */,
-				F00D67D41FE8B5A5003C80C2 /* App */,
-			);
-			name = Models;
-			path = ../../../MiningPoolHub/Sources/Models;
-			sourceTree = "<group>";
-		};
-		F00D67C91FE8B4B6003C80C2 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				F00D67CA1FE8B4B6003C80C2 /* MphWebProvider.swift */,
-			);
-			name = Providers;
-			path = ../../../MiningPoolHub/Sources/Providers;
-			sourceTree = "<group>";
-		};
-		F00D67CB1FE8B4B6003C80C2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F00D67CC1FE8B4B6003C80C2 /* MphProviderExtensions.swift */,
+				F0B1C96C200655BD0054488A /* MphProviderExtensions.swift */,
 			);
 			name = Extensions;
 			path = ../../../MiningPoolHub/Sources/Extensions;
 			sourceTree = "<group>";
 		};
-		F00D67D41FE8B5A5003C80C2 /* App */ = {
+		F0B1C96D200655BD0054488A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F00D67D61FE8B5CB003C80C2 /* MphDefaultConfiguration.swift */,
+				F0B1C96E200655BD0054488A /* App */,
+				F0B1C970200655BD0054488A /* Dtos */,
+			);
+			name = Models;
+			path = ../../../MiningPoolHub/Sources/Models;
+			sourceTree = "<group>";
+		};
+		F0B1C96E200655BD0054488A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F0B1C96F200655BD0054488A /* MphDefaultConfiguration.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		F00D67D51FE8B5AB003C80C2 /* Dtos */ = {
+		F0B1C970200655BD0054488A /* Dtos */ = {
 			isa = PBXGroup;
 			children = (
-				F00D67C71FE8B4B6003C80C2 /* MphCoinProfitStatistics.swift */,
-				F00D67DA1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift */,
-				F00D67C81FE8B4B6003C80C2 /* MphListResponse.swift */,
-				F00D67E61FE8D387003C80C2 /* MphVersionRuntimeResponse.swift */,
-				F00D67EA1FE959C1003C80C2 /* MphListData.swift */,
-				F00D68261FE98062003C80C2 /* MphIntegerData.swift */,
-				F00D68281FE9806E003C80C2 /* MphDoubleData.swift */,
-				F00D68241FE97F0F003C80C2 /* MphObjectData.swift */,
-				F00D67DE1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift */,
-				F00D67DC1FE8CEFC003C80C2 /* MphBalance.swift */,
-				F00D67E21FE8D332003C80C2 /* MphBlockCountResponse.swift */,
-				F00D67E81FE95991003C80C2 /* MphBlocksFoundResponse.swift */,
-				F00D67EC1FE95AA2003C80C2 /* MphBlock.swift */,
-				F00D67EE1FE95E1E003C80C2 /* MphBlockStatsResponse.swift */,
-				F00D67F21FE95E8E003C80C2 /* MphBlockStat.swift */,
-				F00D67F61FE9637D003C80C2 /* MphCurrentWorkersResponse.swift */,
-				F00D67FA1FE9659D003C80C2 /* MphDashboardResponse.swift */,
-				F00D68051FE96C39003C80C2 /* MphDashboardData.swift */,
-				F00D68061FE96C39003C80C2 /* MphCredit.swift */,
-				F00D68181FE97050003C80C2 /* MphDashboardBalanceForAutoExchange.swift */,
-				F00D68161FE96D00003C80C2 /* MphRecentCredit.swift */,
-				F00D68081FE96C39003C80C2 /* MphEstimates.swift */,
-				F00D68011FE96C38003C80C2 /* MphNetwork.swift */,
-				F00D68091FE96C3A003C80C2 /* MphPool.swift */,
-				F00D68071FE96C39003C80C2 /* MphPoolInfo.swift */,
-				F00D68021FE96C38003C80C2 /* MphRawDashboard.swift */,
-				F00D681A1FE97453003C80C2 /* MphRawHashrate.swift */,
-				F00D68031FE96C39003C80C2 /* MphShares.swift */,
-				F00D68041FE96C39003C80C2 /* MphSystem.swift */,
-				F00D68141FE96C62003C80C2 /* MphPersonalDashboard.swift */,
-				F00D681C1FE97AD3003C80C2 /* MphDifficultyResponse.swift */,
-				F00D68201FE97D81003C80C2 /* MphEstimatedTimeResponse.swift */,
-				F00D682A1FE980FA003C80C2 /* MphPoolHashRateResponse.swift */,
-				F00D682C1FE99C8F003C80C2 /* MphPoolInfoResponse.swift */,
-				F00D682E1FE99CA8003C80C2 /* MphPoolDetails.swift */,
-				F00D68301FE99FA0003C80C2 /* MphPoolShareRateResponse.swift */,
-				F00D68321FE9A066003C80C2 /* MphPoolStatusResponse.swift */,
-				F00D68341FE9A06E003C80C2 /* MphPoolStatus.swift */,
-				F00D68361FE9A266003C80C2 /* MphTimeSinceLastBlockResponse.swift */,
-				F00D68381FE9A5C0003C80C2 /* MphTopContributorsResponse.swift */,
-				F00D683A1FE9A5DA003C80C2 /* MphTopContributor.swift */,
-				F00D683C1FE9A5F6003C80C2 /* MphTopContributorHashes.swift */,
-				F00D683E1FE9A852003C80C2 /* MphUserBalanceResponse.swift */,
-				F00D68401FE9A871003C80C2 /* MphUserBalance.swift */,
-				F00D68421FE9AB9D003C80C2 /* MphUserHashRateResponse.swift */,
-				F00D68441FE9ACC3003C80C2 /* MphUserShareRateResponse.swift */,
-				F00D68461FE9AD85003C80C2 /* MphUserStatusResponse.swift */,
-				F00D68481FE9ADA0003C80C2 /* MphUserStatus.swift */,
-				F00D684A1FE9AE04003C80C2 /* MphUserStatusShares.swift */,
-				F00D684C1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift */,
-				F00D684E1FE9B001003C80C2 /* MphUserTransactions.swift */,
-				F00D68501FE9B023003C80C2 /* MphUserTransaction.swift */,
-				F00D68521FE9B247003C80C2 /* MphUserWorkersResponse.swift */,
-				F00D68541FE9B258003C80C2 /* MphWorker.swift */,
-				F00D68561FE9B349003C80C2 /* MphPublicPoolResponse.swift */,
-				F00D687C1FEAC242003C80C2 /* MphsResponse.swift */,
-				F00D687E1FEAC305003C80C2 /* MphsConversionData.swift */,
-				F00D688A1FEAC51D003C80C2 /* MphsConversion.swift */,
-				F00D68801FEAC313003C80C2 /* MphsWalletData.swift */,
-				F00D68821FEAC322003C80C2 /* MphsWorkerData.swift */,
-				F00D68841FEAC33A003C80C2 /* MphsTotalsData.swift */,
-				F00D68861FEAC345003C80C2 /* MphsEstimatesData.swift */,
-				F00D68881FEAC35F003C80C2 /* MphsThresholds.swift */,
+				F0B1C971200655BD0054488A /* MphUserTransactions.swift */,
+				F0B1C972200655BD0054488A /* MphObjectData.swift */,
+				F0B1C973200655BD0054488A /* MphVersionRuntimeResponse.swift */,
+				F0B1C974200655BD0054488A /* MphCurrentWorkersResponse.swift */,
+				F0B1C975200655BD0054488A /* MphListData.swift */,
+				F0B1C976200655BD0054488A /* MphUserBalanceResponse.swift */,
+				F0B1C977200655BD0054488A /* MphTopContributorsResponse.swift */,
+				F0B1C978200655BD0054488A /* MphDoubleData.swift */,
+				F0B1C979200655BD0054488A /* MphsWalletData.swift */,
+				F0B1C97A200655BD0054488A /* MphBlocksFoundResponse.swift */,
+				F0B1C97B200655BD0054488A /* MphEstimates.swift */,
+				F0B1C97C200655BD0054488A /* MphPoolStatus.swift */,
+				F0B1C97D200655BD0054488A /* MphDifficultyResponse.swift */,
+				F0B1C97E200655BD0054488A /* MphPoolStatusResponse.swift */,
+				F0B1C97F200655BD0054488A /* MphPoolInfoResponse.swift */,
+				F0B1C980200655BD0054488A /* MphTimeSinceLastBlockResponse.swift */,
+				F0B1C981200655BD0054488A /* MphUserTransaction.swift */,
+				F0B1C982200655BD0054488A /* MphCoinProfitStatistics.swift */,
+				F0B1C983200655BD0054488A /* MphsTotalsData.swift */,
+				F0B1C984200655BD0054488A /* MphTopContributor.swift */,
+				F0B1C985200655BD0054488A /* MphsResponse.swift */,
+				F0B1C986200655BD0054488A /* MphRawDashboard.swift */,
+				F0B1C987200655BD0054488A /* MphRecentCredit.swift */,
+				F0B1C988200655BD0054488A /* MphSystem.swift */,
+				F0B1C989200655BD0054488A /* MphUserTransactionsResponse.swift */,
+				F0B1C98A200655BD0054488A /* MphUserWorkersResponse.swift */,
+				F0B1C98B200655BD0054488A /* MphNetwork.swift */,
+				F0B1C98C200655BD0054488A /* MphTopContributorHashes.swift */,
+				F0B1C98D200655BD0054488A /* MphPublicPoolResponse.swift */,
+				F0B1C98E200655BD0054488A /* MphBalance.swift */,
+				F0B1C98F200655BD0054488A /* MphWorker.swift */,
+				F0B1C990200655BD0054488A /* MphShares.swift */,
+				F0B1C991200655BD0054488A /* MphsWorkerData.swift */,
+				F0B1C992200655BD0054488A /* MphUserStatusShares.swift */,
+				F0B1C993200655BD0054488A /* MphPool.swift */,
+				F0B1C994200655BD0054488A /* MphBlockStat.swift */,
+				F0B1C995200655BD0054488A /* MphsThresholds.swift */,
+				F0B1C996200655BD0054488A /* MphPoolInfo.swift */,
+				F0B1C997200655BD0054488A /* MphPoolDetails.swift */,
+				F0B1C998200655BD0054488A /* MphAutoSwitchingProfitStatistics.swift */,
+				F0B1C999200655BD0054488A /* MphUserBalancesResponse.swift */,
+				F0B1C99A200655BD0054488A /* MphUserBalance.swift */,
+				F0B1C99B200655BD0054488A /* MphUserShareRateResponse.swift */,
+				F0B1C99C200655BD0054488A /* MphUserHashRateResponse.swift */,
+				F0B1C99D200655BD0054488A /* MphRawHashrate.swift */,
+				F0B1C99E200655BD0054488A /* MphBlock.swift */,
+				F0B1C99F200655BD0054488A /* MphDashboardBalanceForAutoExchange.swift */,
+				F0B1C9A0200655BD0054488A /* MphsConversion.swift */,
+				F0B1C9A1200655BD0054488A /* MphIntegerData.swift */,
+				F0B1C9A2200655BD0054488A /* MphBlockCountResponse.swift */,
+				F0B1C9A3200655BD0054488A /* MphPoolShareRateResponse.swift */,
+				F0B1C9A4200655BD0054488A /* MphBlockStatsResponse.swift */,
+				F0B1C9A5200655BD0054488A /* MphDashboardData.swift */,
+				F0B1C9A6200655BD0054488A /* MphUserStatusResponse.swift */,
+				F0B1C9A7200655BD0054488A /* MphUserStatus.swift */,
+				F0B1C9A8200655BD0054488A /* MphEstimatedTimeResponse.swift */,
+				F0B1C9A9200655BD0054488A /* MphListResponse.swift */,
+				F0B1C9AA200655BD0054488A /* MphsEstimatesData.swift */,
+				F0B1C9AB200655BD0054488A /* MphsConversionData.swift */,
+				F0B1C9AC200655BD0054488A /* MphCredit.swift */,
+				F0B1C9AD200655BD0054488A /* MphPersonalDashboard.swift */,
+				F0B1C9AE200655BD0054488A /* MphDashboardResponse.swift */,
+				F0B1C9AF200655BD0054488A /* MphPoolHashRateResponse.swift */,
 			);
 			path = Dtos;
+			sourceTree = "<group>";
+		};
+		F0B1C9B0200655BD0054488A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F0B1C9B1200655BD0054488A /* MphWebProvider.swift */,
+			);
+			name = Providers;
+			path = ../../../MiningPoolHub/Sources/Providers;
 			sourceTree = "<group>";
 		};
 		F0D1F65F1FE8B12000C346B4 = {
@@ -403,7 +403,7 @@
 		F0D1F66A1FE8B12000C346B4 /* MiningPoolHubDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F00D67C31FE8B4A6003C80C2 /* MiningPoolHub */,
+				F0B1C966200655B30054488A /* MiningPoolHub */,
 				F0D1F66B1FE8B12000C346B4 /* AppDelegate.swift */,
 				F0D1F66D1FE8B12000C346B4 /* ViewController.swift */,
 				F0D1F66F1FE8B12000C346B4 /* Main.storyboard */,
@@ -725,77 +725,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00D67DB1FE8C299003C80C2 /* MphAutoSwitchingProfitStatistics.swift in Sources */,
-				F00D68191FE97050003C80C2 /* MphDashboardBalanceForAutoExchange.swift in Sources */,
-				F00D68311FE99FA0003C80C2 /* MphPoolShareRateResponse.swift in Sources */,
-				F00D67D71FE8B5CB003C80C2 /* MphDefaultConfiguration.swift in Sources */,
-				F00D68111FE96C3A003C80C2 /* MphPoolInfo.swift in Sources */,
-				F00D68511FE9B024003C80C2 /* MphUserTransaction.swift in Sources */,
-				F00D683D1FE9A5F6003C80C2 /* MphTopContributorHashes.swift in Sources */,
-				F00D687F1FEAC305003C80C2 /* MphsConversionData.swift in Sources */,
-				F00D68851FEAC33A003C80C2 /* MphsTotalsData.swift in Sources */,
-				F00D68371FE9A266003C80C2 /* MphTimeSinceLastBlockResponse.swift in Sources */,
-				F00D68251FE97F0F003C80C2 /* MphObjectData.swift in Sources */,
-				F00D682B1FE980FA003C80C2 /* MphPoolHashRateResponse.swift in Sources */,
-				F00D680D1FE96C3A003C80C2 /* MphShares.swift in Sources */,
-				F00D67D11FE8B4B7003C80C2 /* MphProviderExtensions.swift in Sources */,
-				F00D681D1FE97AD3003C80C2 /* MphDifficultyResponse.swift in Sources */,
+				F0B1C9EF200655BD0054488A /* MphListResponse.swift in Sources */,
+				F0B1C9BA200655BD0054488A /* MphCurrentWorkersResponse.swift in Sources */,
+				F0B1C9CA200655BD0054488A /* MphTopContributor.swift in Sources */,
+				F0B1C9F2200655BD0054488A /* MphCredit.swift in Sources */,
 				F0D1F66E1FE8B12000C346B4 /* ViewController.swift in Sources */,
-				F00D684F1FE9B001003C80C2 /* MphUserTransactions.swift in Sources */,
-				F00D68571FE9B349003C80C2 /* MphPublicPoolResponse.swift in Sources */,
-				F00D67EF1FE95E1E003C80C2 /* MphBlockStatsResponse.swift in Sources */,
-				F00D67D01FE8B4B7003C80C2 /* MphWebProvider.swift in Sources */,
-				F00D68451FE9ACC3003C80C2 /* MphUserShareRateResponse.swift in Sources */,
-				F00D67ED1FE95AA2003C80C2 /* MphBlock.swift in Sources */,
-				F00D68831FEAC322003C80C2 /* MphsWorkerData.swift in Sources */,
-				F00D687D1FEAC242003C80C2 /* MphsResponse.swift in Sources */,
-				F00D68121FE96C3A003C80C2 /* MphEstimates.swift in Sources */,
-				F00D68391FE9A5C0003C80C2 /* MphTopContributorsResponse.swift in Sources */,
-				F00D684B1FE9AE04003C80C2 /* MphUserStatusShares.swift in Sources */,
-				F00D680C1FE96C3A003C80C2 /* MphRawDashboard.swift in Sources */,
-				F00D67CE1FE8B4B7003C80C2 /* MphCoinProfitStatistics.swift in Sources */,
-				F00D67CF1FE8B4B7003C80C2 /* MphListResponse.swift in Sources */,
-				F00D67E91FE95991003C80C2 /* MphBlocksFoundResponse.swift in Sources */,
-				F00D68271FE98062003C80C2 /* MphIntegerData.swift in Sources */,
-				F00D67FB1FE9659D003C80C2 /* MphDashboardResponse.swift in Sources */,
-				F00D68171FE96D00003C80C2 /* MphRecentCredit.swift in Sources */,
-				F00D68431FE9AB9D003C80C2 /* MphUserHashRateResponse.swift in Sources */,
-				F00D684D1FE9AFB5003C80C2 /* MphUserTransactionsResponse.swift in Sources */,
-				F00D683B1FE9A5DA003C80C2 /* MphTopContributor.swift in Sources */,
-				F00D67F31FE95E8E003C80C2 /* MphBlockStat.swift in Sources */,
-				F00D67E71FE8D387003C80C2 /* MphVersionRuntimeResponse.swift in Sources */,
-				F00D683F1FE9A852003C80C2 /* MphUserBalanceResponse.swift in Sources */,
-				F00D680E1FE96C3A003C80C2 /* MphSystem.swift in Sources */,
-				F00D682D1FE99C8F003C80C2 /* MphPoolInfoResponse.swift in Sources */,
-				F00D68211FE97D81003C80C2 /* MphEstimatedTimeResponse.swift in Sources */,
-				F00D68891FEAC35F003C80C2 /* MphsThresholds.swift in Sources */,
-				F00D68291FE9806E003C80C2 /* MphDoubleData.swift in Sources */,
-				F00D67D91FE8B6C7003C80C2 /* MphProvider.swift in Sources */,
-				F00D688B1FEAC51D003C80C2 /* MphsConversion.swift in Sources */,
-				F00D68351FE9A06E003C80C2 /* MphPoolStatus.swift in Sources */,
-				F00D68551FE9B258003C80C2 /* MphWorker.swift in Sources */,
-				F00D67EB1FE959C1003C80C2 /* MphListData.swift in Sources */,
+				F0B1C9C6200655BD0054488A /* MphTimeSinceLastBlockResponse.swift in Sources */,
+				F0B1C9ED200655BD0054488A /* MphUserStatus.swift in Sources */,
+				F0B1C9F6200655BD0054488A /* MphWebProvider.swift in Sources */,
+				F0B1C9E9200655BD0054488A /* MphPoolShareRateResponse.swift in Sources */,
+				F0B1C9E7200655BD0054488A /* MphIntegerData.swift in Sources */,
+				F0B1C9E4200655BD0054488A /* MphBlock.swift in Sources */,
+				F0B1C9CB200655BD0054488A /* MphsResponse.swift in Sources */,
+				F0B1C9D6200655BD0054488A /* MphShares.swift in Sources */,
+				F0B1C9F5200655BD0054488A /* MphPoolHashRateResponse.swift in Sources */,
+				F0B1C9E0200655BD0054488A /* MphUserBalance.swift in Sources */,
+				F0B1C9B7200655BD0054488A /* MphUserTransactions.swift in Sources */,
+				F0B1C9F1200655BD0054488A /* MphsConversionData.swift in Sources */,
+				F0B1C9E2200655BD0054488A /* MphUserHashRateResponse.swift in Sources */,
+				F0B1C9D1200655BD0054488A /* MphNetwork.swift in Sources */,
+				F0B1C9DC200655BD0054488A /* MphPoolInfo.swift in Sources */,
+				F0B1C9D0200655BD0054488A /* MphUserWorkersResponse.swift in Sources */,
+				F0B1C9EA200655BD0054488A /* MphBlockStatsResponse.swift in Sources */,
+				F0B1C9C0200655BD0054488A /* MphBlocksFoundResponse.swift in Sources */,
+				F0B1C9C7200655BD0054488A /* MphUserTransaction.swift in Sources */,
+				F0B1C9DA200655BD0054488A /* MphBlockStat.swift in Sources */,
+				F0B1C9D7200655BD0054488A /* MphsWorkerData.swift in Sources */,
 				F0D1F66C1FE8B12000C346B4 /* AppDelegate.swift in Sources */,
-				F00D68151FE96C62003C80C2 /* MphPersonalDashboard.swift in Sources */,
-				F00D68471FE9AD85003C80C2 /* MphUserStatusResponse.swift in Sources */,
-				F00D682F1FE99CA8003C80C2 /* MphPoolDetails.swift in Sources */,
-				F00D680B1FE96C3A003C80C2 /* MphNetwork.swift in Sources */,
-				F00D67D31FE8B595003C80C2 /* MphConfiguration.swift in Sources */,
-				F00D68411FE9A871003C80C2 /* MphUserBalance.swift in Sources */,
-				F00D67DD1FE8CEFC003C80C2 /* MphBalance.swift in Sources */,
-				F00D680F1FE96C3A003C80C2 /* MphDashboardData.swift in Sources */,
-				F00D67E31FE8D332003C80C2 /* MphBlockCountResponse.swift in Sources */,
-				F00D67DF1FE8CF9F003C80C2 /* MphUserBalancesResponse.swift in Sources */,
-				F00D68331FE9A066003C80C2 /* MphPoolStatusResponse.swift in Sources */,
-				F00D67CD1FE8B4B7003C80C2 /* MphProviderOperationProtocol.swift in Sources */,
-				F00D68531FE9B247003C80C2 /* MphUserWorkersResponse.swift in Sources */,
-				F00D68871FEAC345003C80C2 /* MphsEstimatesData.swift in Sources */,
-				F00D68131FE96C3A003C80C2 /* MphPool.swift in Sources */,
-				F00D67F71FE9637D003C80C2 /* MphCurrentWorkersResponse.swift in Sources */,
-				F00D68101FE96C3A003C80C2 /* MphCredit.swift in Sources */,
-				F00D68491FE9ADA0003C80C2 /* MphUserStatus.swift in Sources */,
-				F00D68811FEAC313003C80C2 /* MphsWalletData.swift in Sources */,
-				F00D681B1FE97453003C80C2 /* MphRawHashrate.swift in Sources */,
+				F0B1C9D9200655BD0054488A /* MphPool.swift in Sources */,
+				F0B1C9DD200655BD0054488A /* MphPoolDetails.swift in Sources */,
+				F0B1C9B5200655BD0054488A /* MphProviderExtensions.swift in Sources */,
+				F0B1C9EB200655BD0054488A /* MphDashboardData.swift in Sources */,
+				F0B1C9BC200655BD0054488A /* MphUserBalanceResponse.swift in Sources */,
+				F0B1C9EE200655BD0054488A /* MphEstimatedTimeResponse.swift in Sources */,
+				F0B1C9CC200655BD0054488A /* MphRawDashboard.swift in Sources */,
+				F0B1C9DF200655BD0054488A /* MphUserBalancesResponse.swift in Sources */,
+				F0B1C9CE200655BD0054488A /* MphSystem.swift in Sources */,
+				F0B1C9D3200655BD0054488A /* MphPublicPoolResponse.swift in Sources */,
+				F0B1C9DE200655BD0054488A /* MphAutoSwitchingProfitStatistics.swift in Sources */,
+				F0B1C9B8200655BD0054488A /* MphObjectData.swift in Sources */,
+				F0B1C9C9200655BD0054488A /* MphsTotalsData.swift in Sources */,
+				F0B1C9C5200655BD0054488A /* MphPoolInfoResponse.swift in Sources */,
+				F0B1C9B4200655BD0054488A /* MphProvider.swift in Sources */,
+				F0B1C9BD200655BD0054488A /* MphTopContributorsResponse.swift in Sources */,
+				F0B1C9F4200655BD0054488A /* MphDashboardResponse.swift in Sources */,
+				F0B1C9BE200655BD0054488A /* MphDoubleData.swift in Sources */,
+				F0B1C9E1200655BD0054488A /* MphUserShareRateResponse.swift in Sources */,
+				F0B1C9BF200655BD0054488A /* MphsWalletData.swift in Sources */,
+				F0B1C9D4200655BD0054488A /* MphBalance.swift in Sources */,
+				F0B1C9C4200655BD0054488A /* MphPoolStatusResponse.swift in Sources */,
+				F0B1C9E5200655BD0054488A /* MphDashboardBalanceForAutoExchange.swift in Sources */,
+				F0B1C9B6200655BD0054488A /* MphDefaultConfiguration.swift in Sources */,
+				F0B1C9C1200655BD0054488A /* MphEstimates.swift in Sources */,
+				F0B1C9D5200655BD0054488A /* MphWorker.swift in Sources */,
+				F0B1C9F3200655BD0054488A /* MphPersonalDashboard.swift in Sources */,
+				F0B1C9D2200655BD0054488A /* MphTopContributorHashes.swift in Sources */,
+				F0B1C9B3200655BD0054488A /* MphConfiguration.swift in Sources */,
+				F0B1C9EC200655BD0054488A /* MphUserStatusResponse.swift in Sources */,
+				F0B1C9F0200655BD0054488A /* MphsEstimatesData.swift in Sources */,
+				F0B1C9D8200655BD0054488A /* MphUserStatusShares.swift in Sources */,
+				F0B1C9DB200655BD0054488A /* MphsThresholds.swift in Sources */,
+				F0B1C9CF200655BD0054488A /* MphUserTransactionsResponse.swift in Sources */,
+				F0B1C9E8200655BD0054488A /* MphBlockCountResponse.swift in Sources */,
+				F0B1C9B9200655BD0054488A /* MphVersionRuntimeResponse.swift in Sources */,
+				F0B1C9E6200655BD0054488A /* MphsConversion.swift in Sources */,
+				F0B1C9C2200655BD0054488A /* MphPoolStatus.swift in Sources */,
+				F0B1C9C3200655BD0054488A /* MphDifficultyResponse.swift in Sources */,
+				F0B1C9C8200655BD0054488A /* MphCoinProfitStatistics.swift in Sources */,
+				F0B1C9B2200655BD0054488A /* MphProviderOperationProtocol.swift in Sources */,
+				F0B1C9BB200655BD0054488A /* MphListData.swift in Sources */,
+				F0B1C9E3200655BD0054488A /* MphRawHashrate.swift in Sources */,
+				F0B1C9CD200655BD0054488A /* MphRecentCredit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

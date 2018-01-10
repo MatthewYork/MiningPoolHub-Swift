@@ -83,7 +83,7 @@ public class MphsConversionData: Mappable {
     
     public func conversion(for domain: MphDomain) -> MphsConversion {
         switch domain {
-        case .root: return btc
+        case .none: return btc
         case .adzcoin: return adz
         case .auroracoinQubit: return aur
         case .bitcoin: return btc

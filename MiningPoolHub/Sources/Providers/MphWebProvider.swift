@@ -202,7 +202,7 @@ public enum MphsCurrency: Int {
         case "LTC":
             self = .ltc
         case "ETH":
-            self = .ltc
+            self = .eth
         case "XMR":
             self = .xmr
         default: return nil

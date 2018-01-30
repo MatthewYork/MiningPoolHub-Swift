@@ -175,13 +175,14 @@ public enum MphDomain: Int {
 }
 
 public enum MphsCurrency: Int {
-    case usd, eur, gbp, btc, ltc, eth, xmr
+    case usd, eur, gbp, cad, btc, ltc, eth, xmr
     
     public func description() -> String {
         switch self {
         case .usd: return "USD"
         case .eur: return "EUR"
         case .gbp: return "GBP"
+        case .cad: return "CAD"
         case .btc: return "BTC"
         case .ltc: return "LTC"
         case .eth: return "ETH"
@@ -197,6 +198,8 @@ public enum MphsCurrency: Int {
             self = .eur
         case "GBP":
             self = .gbp
+        case "CAD":
+            self = .cad
         case "BTC":
             self = .btc
         case "LTC":

@@ -491,7 +491,7 @@ extension MphWebProvider {
             //Clean the response to be traditional http response
             let httpResponse = self.cleanResponse(urlResponse: response)
             if !httpResponse.wasSuccessful { DispatchQueue.main.async { error(WebProviderError(error: taskError)) } }
-            guard let responseString = String(data: data!, encoding: String.Encoding.utf8) else { error(WebProviderError(error: nil)); return }
+            guard let data = data , let responseString = String(data: data, encoding: String.Encoding.utf8) else { error(WebProviderError(error: nil)); return }
             
             //Parse and return
             guard let mappedObject = Mapper<RT>().map(JSONString: responseString) else {
